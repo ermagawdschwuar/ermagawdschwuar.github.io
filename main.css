@@ -24,9 +24,15 @@ body{
     color: whitesmoke;
     font-size: 1.14em;
     float: left;
+    text-align: center;
     margin: 0% 0% 0% 15%;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
 }
 
+#name:hover{
+    color:hotpink;
+}
 
 #navcontent{
     color: whitesmoke;
@@ -42,6 +48,9 @@ a{
     padding: 0em 1em 0em 1em;
 }
 
+a:hover{
+    color:hotpink;
+}
 
 #skipnav{
     position: fixed;
@@ -83,13 +92,21 @@ a#skipnav:hover{
     position: relative;
     top: -5em;
     z-index: 99;   
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#pp:hover{
+    width: 800px;
 }
 
 article{
     position: relative;
-    top: -1em;
+    top: -3em;
     width: 60%;
     margin: 0 auto;
+    border: 2px solid whitesmoke;
+    padding: 1em;
 }
 
 .contact{
