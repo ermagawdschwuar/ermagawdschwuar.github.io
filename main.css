@@ -48,7 +48,7 @@ a{
     color: whitesmoke;
     font-size: 20px;
     margin: 3em 0em 0em 7em;
-    z-index: -99;
+    z-index: 99;
 }
 
 a#skipnav:active,
@@ -58,31 +58,41 @@ a#skipnav:hover{
 }
 
 
-#homebanner{
+.banner{
     position: relative;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-image: url(pictures/banner2.jpg);
     width: 100%;
-    height: 800px;
+    height: 100vh;
+    z-index: 98;
 }
 
 .intro{
-    height: 800px;
+    height: 110vh;
     background-color: rgb(86,86,86);
     color: whitesmoke;
     text-align: center;
-    font-size: 16pt;
-    padding: 10%;
+    font-size: 20pt;    
+    line-height: 1.7em;
+}
+
+#pp{
+    width: 600px;
+    position: relative;
+    top: -5em;
+    z-index: 99;   
+}
+
+article{
+    position: relative;
+    top: -1em;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .contact{
-    height:800px;
-    background-color: ;
-}
-
-#profilebanner{
-    height: 800px;
+    height: 100vh;
     background-color: black;
 }
