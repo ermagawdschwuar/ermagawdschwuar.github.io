@@ -42,6 +42,22 @@ a{
     padding: 0em 1em 0em 1em;
 }
 
+
+#skipnav{
+    position: fixed;
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 3em 0em 0em 7em;
+    z-index: -99;
+}
+
+a#skipnav:active,
+a#skipnav:focus,
+a#skipnav:hover{
+    z-index: 99;
+}
+
+
 #homebanner{
     position: relative;
     background-attachment: fixed;
