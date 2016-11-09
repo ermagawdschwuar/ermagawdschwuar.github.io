@@ -5,7 +5,8 @@ div, body, p, a, h3, head, nav, footer head, img{
 }
 
 @fontface{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Thin';
+    src: local(fonts/Roboto-Thin.ttf);
 }
 
 body{
