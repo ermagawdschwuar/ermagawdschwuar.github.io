@@ -11,6 +11,7 @@ div, body, p, a, h3, head, nav, footer head, img{
 
 body{
     font-family: 'Roboto Thin';
+    width: 100%;
 }
 
 .nav{
@@ -91,7 +92,7 @@ a#skipnav:hover{
 }
 
 #pp{
-    width: 50%;
+    width: 600px;
     position: relative;
     top: -5em;
     z-index: 98;   
@@ -100,7 +101,7 @@ a#skipnav:hover{
 }
 
 #pp:hover{
-    width: 60%;
+    width: 800px;
 }
 
 article{
