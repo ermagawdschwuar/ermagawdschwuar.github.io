@@ -91,7 +91,7 @@ a#skipnav:hover{
 }
 
 #pp{
-    width: 50%;
+    width: 600px;
     position: relative;
     top: -5em;
     z-index: 98;   
@@ -100,23 +100,31 @@ a#skipnav:hover{
 }
 
 #pp:hover{
-    width: 60%;
+    width: 700px;
 }
 
 article{
     position: relative;
-    top: -3em;
+    top: -5em;
     width: 60%;
     margin: 0 auto;
     border: 2px solid rgb(252, 200, 247);
     color: rgb(252, 200, 247);
     padding: 1em;
     overflow: auto;
-    max-height: 50%;
+    max-height: 36%;
     font-weight: bolder;
 }
 
 .contact{
     background-color: black;
     height: 100vh;
+}
+
+#insta{
+    position:absolute;
+    height: 25%;
+    width: 25%;
+    background-color: white;
+    margin: 5em;
 }
