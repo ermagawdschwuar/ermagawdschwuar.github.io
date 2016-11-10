@@ -11,6 +11,7 @@ div, body, p, a, h3, head, nav, footer head, img{
 
 body{
     font-family: 'Roboto Thin';
+    width: 100%;
 }
 
 .nav{
@@ -93,7 +94,7 @@ a#skipnav:hover{
 #pp{
     width: 600px;
     position: relative;
-    top: -5em;
+    top: -6em;
     z-index: 98;   
     transition: 1s;
     transition-delay: 0.5s;
