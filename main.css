@@ -1,4 +1,4 @@
-div, body, p, a, h3, head, nav, footer head, img{
+div, body, p, a, h2, h3, head, nav, footer head, img{
     margin: 0;
     padding: 0;
     border:0;
@@ -115,6 +115,7 @@ article{
     overflow: auto;
     max-height: 36%;
     font-weight: bolder;
+    height: 100vh;
 }
 
 .contact{
@@ -122,10 +123,22 @@ article{
     height: 100vh;
 }
 
+#social{
+    color:rgb(252, 200, 247);
+    font-size: 20pt;
+    text-align: center;
+    padding: 1em;
+}
+
+
 #insta{
-    position:absolute;
-    height: 25%;
-    width: 25%;
-    background-color: white;
-    margin: 5em;
+    
+}
+
+footer{
+    background-color: rgb(59,54,59);
+    padding: 0.5em;
+    text-align: right;
+    font-size: 15pt;
+    color: rgb(252, 200, 247);
 }
