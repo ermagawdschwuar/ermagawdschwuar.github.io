@@ -119,7 +119,7 @@ article{
 
 .contact{
     background-color: black;
-    height: 100vh;
+    height: 110vh;
 }
 
 #socialhead{
@@ -165,8 +165,8 @@ article{
 
 #snapchat:hover + .peek{
     opacity: 1;
-    width: 21%;
-    height: 21%;    
+    width: 20%;
+    height: 20%;    
 }
 
 .socialwords {
@@ -175,7 +175,7 @@ article{
     font-size: 30pt;
     width: 30%;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     top: -3em;
     transition: 1s ease-in;
     transition-delay: 1s;
