@@ -133,8 +133,39 @@ article{
     position: relative;
     width: 128px;
     height: 128px;
-    margin: 2em auto;
+    margin-left: 20%;
+    margin-bottom: 2em;
+    transition: 1s ease-in;
+    transition-delay: 1s;
 }
+
+.peek{    
+    opacity: 0;
+    transition: 0.5s ease-in;
+    height: 0%;
+    position: absolute;
+    width: 20%;
+    left: 40%;
+    margin-top: -10em;
+}
+
+#insta:hover + .peek{
+    opacity: 1;
+    height: 30%;
+    width: 50%;
+}
+
+#facebook:hover + .peek{
+    opacity: 1;
+    height: 30%;
+    width: 50%;
+}
+
+#snapchat:hover + .peek{
+    opacity: 1;
+    height: 10%;    
+}
+
 
 
 footer{
