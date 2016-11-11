@@ -26,21 +26,20 @@ body{
     font-size: 1.14em;
     float: left;
     text-align: center;
-    margin: 0% 0% 0% 15%;
+    margin: 0% 0% 0% 10%;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
 }
 
 #name:hover{
     color: rgb(252, 0, 198);
+    font-weight: bolder;
 }
 
 #navcontent{
     color: rgb(245,245,245);
     font-size: 1.3em;
     float: right;
-    padding: 0% 5% 0% 5%;
-    vertical-align: middle;
 }
 
 a{
@@ -123,17 +122,20 @@ article{
     height: 100vh;
 }
 
-#social{
+#socialhead{
     color:rgb(252, 200, 247);
     font-size: 20pt;
     text-align: center;
     padding: 1em;
 }
 
-
-#insta{
-    
+#insta, #facebook, #snapchat{
+    position: relative;
+    width: 128px;
+    height: 128px;
+    margin: 2em auto;
 }
+
 
 footer{
     background-color: rgb(59,54,59);
