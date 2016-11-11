@@ -71,7 +71,7 @@ a#skipnav:hover{
 }
 
 
-.banner{
+#homebanner{
     height: 100vh;
     position: relative;
     background-attachment: fixed;
@@ -135,8 +135,6 @@ article{
     height: 128px;
     margin-left: 20%;
     margin-bottom: 2em;
-    transition: 1s ease-in;
-    transition-delay: 1s;
 }
 
 .peek{    
@@ -144,16 +142,20 @@ article{
     transition: 0.5s ease-in;
     height: 0%;
     position: absolute;
-    width: 20%;
-    left: 40%;
+    width: 0%;
+    left: 35%;
     margin-top: -10em;
+    transition: 1s ease-in;
+    transition-delay: 0.5s;
+    z-index: 99;
 }
 
-#insta:hover + .peek{
+#insta:hover + .peek {
     opacity: 1;
     height: 30%;
     width: 50%;
 }
+
 
 #facebook:hover + .peek{
     opacity: 1;
@@ -163,10 +165,21 @@ article{
 
 #snapchat:hover + .peek{
     opacity: 1;
-    height: 10%;    
+    width: 21%;
+    height: 21%;    
 }
 
-
+.socialwords {
+    color: white;
+    position: relative;
+    font-size: 30pt;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    top: -3em;
+    transition: 1s ease-in;
+    transition-delay: 1s;
+}
 
 footer{
     background-color: rgb(59,54,59);
@@ -174,4 +187,9 @@ footer{
     text-align: right;
     font-size: 15pt;
     color: rgb(252, 200, 247);
+}
+
+#profilebanner{
+    background-color: black;
+    height: 100vh;
 }
