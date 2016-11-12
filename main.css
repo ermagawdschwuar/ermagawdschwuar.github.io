@@ -12,6 +12,8 @@ div, body, p, a, h2, h3, head, nav, footer head, img{
 body{
     font-family: 'Roboto Thin';
     width: 100%;
+    background-color: rgb(0,0,0);
+    color: rgb(252, 200, 247);
 }
 
 .nav{
@@ -58,16 +60,23 @@ a:hover{
     font-size: 20px;
     margin: 3em 0em 0em 0em;
     z-index: 99;
-    background: rgb(0,0,0);
     padding: 0.5em 0em;
-    left: -10em;
+    background-color: rgb(0,0,0);
+    color: rgb(0,0,0);
+    left: -5.9em;
+    transition: 0.5s ease-in;
+    transition-delay: 0.5s;
 }
 
-a#skipnav:active,
-a#skipnav:focus,
-a#skipnav:hover{
-    left:0em;
-    z-index: 99;
+#skipnavarrow{
+    color: white;
+}
+
+#skipnav:active,
+#skipnav:focus,
+#skipnav:hover{
+    left: 0em;
+    color: white;
 }
 
 
@@ -83,7 +92,7 @@ a#skipnav:hover{
 }
 
 .intro{
-    background-color: rgb(59,54,59);
+    background-color: rgb(56,56,56);
     text-align: center;
     font-size: 20pt;    
     line-height: 1.7em;
@@ -103,7 +112,7 @@ a#skipnav:hover{
     width: 700px;
 }
 
-article{
+#homeintro{
     position: relative;
     top: -5em;
     width: 60%;
@@ -170,7 +179,7 @@ article{
 }
 
 .socialwords {
-    color: white;
+    color: rgb(252, 200, 247);;
     position: relative;
     font-size: 30pt;
     width: 30%;
@@ -182,14 +191,18 @@ article{
 }
 
 footer{
-    background-color: rgb(59,54,59);
+    background-color: rgb(56,56,56);
     padding: 0.5em;
     text-align: right;
     font-size: 15pt;
     color: rgb(252, 200, 247);
 }
 
-#profilebanner{
-    background-color: black;
+#profile{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10em;
+    background-color: rgb(87,87,87);
     height: 100vh;
+    z-index: 0;
 }
