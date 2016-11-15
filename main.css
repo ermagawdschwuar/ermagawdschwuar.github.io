@@ -5,12 +5,12 @@ div, body, p, a, h2, h3, head, nav, footer head, img{
 }
 
 @font-face{
-    font-family: "Roboto Thin";
-    src: url("/fonts/Roboto-Thin.tff") format("truetype");
+    font-family: "Roboto-nnoThin";
+    src: url("/fonts/Roboto-Thin.ttf") format("truetype");
 }
 
 body{
-    font-family: "Roboto Thin", sans-serif;
+    font-family: "Roboto-Thin", sans-serif;
     width: 100%;
     background-color: rgb(0,0,0);
     color: rgb(252, 200, 247);
