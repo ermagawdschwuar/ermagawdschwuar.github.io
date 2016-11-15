@@ -1,7 +1,7 @@
-div, body, p, a, h2, h3, head, nav, footer head, img{
-    margin: 0;
-    padding: 0;
-    border:0;
+div, body, p, a, h2, h3, head, nav, footer head, img, figure{
+    margin: 0px;
+    padding: 0px;
+    border:0px;
 }
 
 @font-face{
@@ -103,6 +103,7 @@ a:hover{
     font-size: 20pt;    
     line-height: 1.7em;
     height: 100vh;
+    z-index: 99;
 }
 
 #pp{
@@ -128,7 +129,7 @@ a:hover{
 
 .contact{
     background-color: rgb(0,0,0);
-    height: 120vh;
+    height: 140vh;
 }
 
 #socialhead{
@@ -174,11 +175,11 @@ a:hover{
 
 #snapchat:hover + .peek{
     opacity: 1;
-    width: 300px;    
+    width: 250px;    
 }
 
 .socialwords {
-    color: rgb(252, 200, 247);;
+    color: rgb(252, 200, 247);
     position: relative;
     font-size: 30pt;
     width: 30%;
@@ -212,4 +213,99 @@ footer{
 #profilepp{
     margin-top: 10%;
     margin-left: -45%;
+}
+
+.navaside{
+    position: fixed;
+    float: left;
+    z-index: 99;
+    padding: 1em 1.5em;;
+    border: 4px solid rgb(252, 200, 247);
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+    top: 30%;
+    left: 1%;
+}
+
+#education{
+    margin: 0 auto;
+    width: 50%;
+    padding: 2em;
+    position: relative;
+    top: 30%;
+    
+}
+
+.divtemp2{
+    background-color: rgb(0,0,0);
+    height: 100vh;
+}
+
+#profiledivlayout{
+    margin-left: 20%;
+    width: 40%;
+    position: relative;
+    top: 15%;
+    font-size: 15pt;
+    float: left;
+}
+
+#text{
+    padding: 1em 0em;
+    margin-top: 0.5em;
+    line-height: 2em;
+    text-align: justify;
+    border: 2px solid rgb(252, 200, 247);
+    padding: 1em;
+    max-height: 400px;
+    overflow: auto;
+}
+
+#primarypic{
+    width: 30%;
+    margin-left: 65%;
+    margin-top: -17%;
+}
+
+#primarypiccap{
+    width: 30%;
+    margin-left: 65%;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.divtemp3{
+    background-color: rgb(160,6,108);
+    height: 100vh;
+}
+
+#secondarypic{
+    width: 24%;
+    margin-left: 2em;
+    margin-top: 8em;
+}
+
+#secondarypiccap{
+    width: 25%;
+    margin-left: 63%;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.divtemp1{
+     background-color: rgb(56,56,56);
+    height: 100vh;
+}
+
+#polypic{
+    width: 28%;
+    margin-left: 2em;
+    margin-top: 8em;
+}
+
+#polypiccap{
+    width: 25%;
+    margin-left: 63%;
+    text-align: center;
+    font-size: 14pt;
 }
