@@ -19,16 +19,9 @@ figure {
     src: url("fonts/Roboto-Thin.ttf") format("truetype");
 }
 
-if(navigator.userAgent.match(/Trident\/7\./)) { // if IE
-        $('body').on("mousewheel", function () {
-            // remove default behavior
-            event.preventDefault(); 
-
-            //scroll without smoothing
-            var wheelDelta = event.wheelDelta;
-            var currentScrollPosition = window.pageYOffset;
-            window.scrollTo(0, currentScrollPosition - wheelDelta);
-        });
+html{
+    overflow: hidden;
+    height: 100%;
 }
 
 body {
@@ -36,6 +29,8 @@ body {
     width: 100%;
     background-color: rgb(0, 0, 0);
     color: rgb(252, 200, 247);
+    overflow:auto;
+    height: 100%:
 }
 
 .nav {
