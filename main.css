@@ -317,27 +317,40 @@ footer {
 }
 
 #polypic {
-    width: 28%;
+    width: 30%  ;
     margin-left: 2em;
     margin-top: 8em;
 }
 
 #polypiccap {
-    width: 25%;
-    margin-left: 63%;
+    width: 30%;
+    margin-left: 62%;
     text-align: center;
     font-size: 14pt;
 }
 
 #christpic {
     width: 30%;
+    margin-top: 10em;
     margin-left: 2em;
-    margin-top: 9em;
 }
 
 #christpiccap {
     width: 25%;
     margin-left: 65%;
+    text-align: center;
+    font-size: 14pt;
+}
+
+#fampic{
+    width: 30%;
+    margin-left: 2em;
+    margin-top: 10em;
+}
+
+#fampiccap{
+    width: 30%;
+    margin-left: 62%;
     text-align: center;
     font-size: 14pt;
 }
