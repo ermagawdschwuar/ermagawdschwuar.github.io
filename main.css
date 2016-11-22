@@ -37,30 +37,22 @@ body {
 }
 
 header{
-    color: rgb(245, 245, 245);
-    font-size: 1.14em;
     float: left;
     text-align: center;
     margin-left: 10%;
     -webkit-transition: 0.5s ease;
     transition: 0.5s ease;
-    width: 20%;
-    background-color: transparent;
     position: fixed;
-    z-index: 99;
-}
-
-header:hover {
-    color: rgb(252, 0, 198);
-    font-weight: bolder;
+    z-index: 98;
+    top: -1em;
 }
 
 nav {
     position: fixed;
     color: rgb(245, 245, 245);
-    font-size: 1.3em;
+    font-size: 25px;
     z-index: 99;
-    margin-left: 65%;
+    margin-left: 60%;
 }
 
 a {
@@ -118,14 +110,14 @@ a:hover {
 .intro {
     background-color: rgb(56, 56, 56);
     text-align: center;
-    font-size: 20pt;
-    line-height: 1.7em;
     height: 100vh;
     z-index: 99;
+    font-size: 18pt;
+    line-height: 1.5em;
 }
 
 #pp {
-    width: 400px;
+    width: 300px;
     position: relative;
     top: -6em;
     z-index: 98;
@@ -140,7 +132,7 @@ a:hover {
     color: rgb(252, 200, 247);
     padding: 1em;
     overflow: auto;
-    max-height: 36%;
+    max-height: 47%;
     font-weight: bolder;
     height: 100vh;
 }
@@ -203,14 +195,14 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
     text-align: center;
     top: 30%;
-    left: 1%;
+    left: -15%;
 }
 
 .presectionheader{
     position: relative;
-    top:38%;
-    width: 50%;
+    top:35%;
     margin: 0 auto;
+    font-size: 50pt;
 }
 
 .presection {
@@ -219,23 +211,25 @@ footer {
     padding: 2em;
     position: relative;
     top: 30%;
+    font-size: 25pt;
+    line-height: 1.5em;
 }
 
 .textheader{
     font-size: 28px;
-    margin-left: 20%;
+    margin-left: 10%;
     position: relative;
     top: 15%;
 }
 
 .divtemp2 {
     background-color: rgb(0, 0, 0);
-    height: 100vh;
+    height: 130vh;
 }
 
 .profiledivlayout {
-    margin-left: 20%;
-    width: 60%;
+    margin-left: 10%;
+    width: 90%;
     position: relative;
     top: 15%;
     font-size: 15pt;
@@ -250,7 +244,7 @@ footer {
     text-align: justify;
     border: 2px solid rgb(252, 200, 247);
     padding: 1em;
-    max-height: 50vh;
+    max-height: 70vh;
     overflow: auto;
     float: left;
 }
@@ -270,12 +264,12 @@ footer {
 
 .divtemp3 {
     background-color: rgb(160, 6, 108);
-    height: 100vh;
+    height: 130vh;
 }
 
 .divtemp1 {
     background-color: rgb(56, 56, 56);
-    height: 100vh;
+    height: 130vh;
 }
 
 #bbpic {
