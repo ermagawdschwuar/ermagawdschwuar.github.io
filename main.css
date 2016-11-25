@@ -10,7 +10,7 @@ footer,
 head,
 img,
 aside,
-figure {
+figure, iframe {
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -29,20 +29,29 @@ html {
 
 body {
     font-family: "Roboto-Thin", sans-serif;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    color: rgb(256,256,256);
+    background-color: rgb(56, 56, 56);
+    color: rgb(256, 256, 256);
     overflow: auto;
     height: 100%;
 }
 
-header{
+header {
     float: left;
     text-align: center;
-    margin-left: 5%;
+    margin-left: 10%;
     z-index: 98;
     margin-top: -1em;
 }
+
+#weblogolink{
+    margin-left: -302px;
+    opacity: 0;
+}
+
+#weblogolink:hover{
+    opacity:1; 
+}
+
 
 nav {
     color: rgb(245, 245, 245);
@@ -61,56 +70,113 @@ a {
 
 a:hover {
     color: rgb(252, 0, 198);
+    text-decoration: underline; 
 }
 
-#skipnav {
+.pageid{
+    color: rgb(240, 50, 180);
+    text-decoration: underline;
+}
+
+#homeskipnav {
     position: fixed;
     color: rgb(245, 245, 245);
     font-size: 20px;
+    text-align: left;
     margin-top: 5%;
     z-index: 99;
     padding: 0.5em 0em;
     background-color: rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
-    left: -5.9em;
+    color: rgba(0, 0, 0, 0);
     transition: 0.5s ease-in;
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
+    max-height: 23px;
+    left: -6.5em;
+}
+
+#profileskipnav {
+    position: fixed;
+    color: rgb(245, 245, 245);
+    font-size: 20px;
+    text-align: left;
+    margin-top: 5%;
+    z-index: 99;
+    padding: 0.5em 0em;
+    background-color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    transition: 0.4s ease-in;
+    transition-delay: 0.2s;
+    max-height: 23px;
+    left: -6em;
+}
+
+#worksskipnav {
+    position: fixed;
+    color: rgb(245, 245, 245);
+    font-size: 20px;
+    text-align: left;
+    margin-top: 5%;
+    z-index: 99;
+    padding: 0.5em 0em;
+    background-color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0);
+    transition: 0.4s ease-in;
+    transition-delay: 0.2s;
+    max-height: 23px;
+    left: -10em;
 }
 
 #skipnavarrow {
-    color: white;
+    color: rgba(256, 256, 256, 1);
 }
 
-#skipnav:active,
-#skipnav:focus,
-#skipnav:hover {
+#homeskipnav:active,
+#homeskipnav:focus,
+#homeskipnav:hover {
     left: 0em;
-    color: white;
+    color: rgba(256, 256, 256, 1);
+    max-height: 100px;
+}
+
+#profileskipnav:active,
+#profileskipnav:focus,
+#profileskipnav:hover {
+    left: 0em;
+    color: rgba(256, 256, 256, 1);
+    max-height: 120px;
+}
+
+#worksskipnav:active,
+#worksskipnav:focus,
+#worksskipnav:hover {
+    left: 0em;
+    color: rgba(256, 256, 256, 1);
+    max-height: 120px;
 }
 
 .container {
     height: 100vh;
-    width: 100%;
+    width: 1200px;
+    margin: 0 auto;
 }
 
-#homebanner{
-    height: 100vh;
+#homebanner {
+    height: 120vh;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-image: url(pictures/homebanner.jpg);
-    width: 100%;
+    background-color: rgb(56, 56, 56);
 }
 
-#home{
-    height: 82.5vh;
-    background-color: transparent;
+#home {
+    height: 90vh;
 }
 
 .intro {
-    background-color: rgb(56,56,56);
+    background-color: rgb(56, 56, 56);
     text-align: center;
-    height: 100vh;
+    height: 110vh;
     z-index: 99;
     font-size: 18pt;
     line-height: 1.5em;
@@ -148,19 +214,20 @@ a:hover {
     padding: 1em;
 }
 
-.socialicon{
+.socialicon {
     width: 40%;
-    margin: 0 auto;  
+    margin: 0 auto;
     padding-bottom: 3em;
 }
 
-.socialword{
+.socialword {
     float: right;
     font-size: 35px;
     position: relative;
     right: 25%;
     padding-top: 1.25em;
     padding-bottom: 1em;
+    color: rgb(252, 200, 247);
 }
 
 footer {
@@ -172,35 +239,22 @@ footer {
     color: rgb(252, 200, 247);
 }
 
-#profilebanner{
-    height: 100vh;
+#profilebanner {
+    height: 120vh;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-image: url(pictures/profilebanner.png);
-    width: 100%;
-    z-index: 97;
+    background-image: url(pictures/profilebanner.jpg);
+    background-color: rgb(67, 132, 150);
 }
 
-#profile{
-    height: 82.5vh;
+#profile {
+    height: 90vh;
 }
 
-#navaside {
-    position: fixed;
-    float: left;
-    z-index: 99;
-    padding: 1em 1.5em;
-    border: 4px solid rgb(252, 200, 247);
-    background-color: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    top: 30%;
-    left: -15%;
-}
-
-.presectionheader{
+.presectionheader {
     position: relative;
-    top:35%;
+    top: 35%;
     margin: 0 auto;
     font-size: 50pt;
 }
@@ -215,15 +269,15 @@ footer {
     line-height: 1.5em;
 }
 
-.textheader{
+.textheader {
     font-size: 28px;
     margin-left: 10%;
     padding-top: 2em;
 }
 
 .divtemp2 {
-    background-color: rgb(37, 64, 124);
-    height: 120vh;
+    background-color: rgb(32, 58, 92);
+    min-height: 110vh;
 }
 
 .profiledivlayout {
@@ -239,9 +293,9 @@ footer {
     margin-top: 0.5em;
     line-height: 1.5em;
     text-align: justify;
-    border: 2px solid rgb(265,265,265);
+    border: 2px solid rgb(265, 265, 265);
     padding: 1em;
-    max-height: 60vh;
+    max-height: 80vh;
     overflow: auto;
     float: left;
 }
@@ -254,19 +308,19 @@ footer {
 
 .caption {
     width: 45%;
-    margin-left: 50%;
+    margin-left: 48%;
     text-align: center;
     font-size: 14pt;
 }
 
 .divtemp3 {
-    background-color:rgb(67, 132, 150);
-    height: 120vh;
+    background-color: rgb(67, 132, 150);
+    min-height: 110vh;
 }
 
 .divtemp1 {
     background-color: rgb(56, 56, 56);
-    height: 120vh;
+    min-height: 110vh;
 }
 
 #bbpic {
@@ -275,5 +329,63 @@ footer {
 
 #bbcap {
     position: relative;
-    left: -2em;
+    width: 300px;
+    left: -1em;
+}
+
+#worksbanner {
+    height: 120vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(pictures/worksbanner.jpg);
+    background-color: rgb(32, 58, 92);
+}
+
+#works {
+    height: 90vh;
+}
+
+.worksheader {
+    font-size: 35px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.worksgallery {
+    margin-left: 10%;
+    width: 805px;
+    margin: 0 auto;
+    padding-bottom: 10em;
+}
+
+#cip {
+    margin-left: -402px;
+    z-index: -99;
+}
+
+#cip:hover {
+    opacity: 0;
+}
+
+
+
+
+
+#wipbanner {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(pictures/wipbanner.jpg);
+    background-color: rgb(56, 56, 56);
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    padding: 2em;
 }

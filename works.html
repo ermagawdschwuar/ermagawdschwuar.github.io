@@ -1,23 +1,101 @@
 <!DOCTYPE html>
 <html lang="EN">
-    <head>
+
+<head>
     <meta charset="utf-8">
-    <title>Profile</title>
+    <title>Joshua Lee</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1><a href="index.html">joshua lee.</a></h1>
-    </header>
-    <nav>
-        <h4><a href="index.html">home</a>
-            <a href="profile.html">profile</a>
-            <a href="works.html">works</a>
-            <a href="blog.html">blog</a>
-        </h4>
-    </nav>
+    <article class="container" id="worksbanner">
+        <header>
+            <h1>
+                <img id="weblogo" src="pictures/websitelogov2.png">
+                <a href="index.html">
+                    <img id="weblogolink" src="pictures/websitelogov2hover.png" alt="website icon"></a>
+            </h1>
+        </header>
+        <nav>
+            <h4>
+                <a href="index.html">home</a>
+                <a href="profile.html">profile</a>
+                <a href="works.html" class="pageid">works</a>
+                <a href="blog.html">blog</a>
+            </h4>
+        </nav>
+
+        <aside id="worksskipnav">
+            <p>
+                <a href=#photogdirect>
+            skip to: photography</a> <span id="skipnavarrow">&lt;</span>
+                <br>
+                <a href="#designdirect">
+            design</a>
+                <br>
+                <a href="#filmdirect">film</a>
+                <br>
+                <a href="#worksbanner">
+                back to top
+                </a>
+            </p>
+        </aside>
+
+        <section id="works"></section>
+
+        <article class="divtemp1" id="photogdirect">
+            <section>
+                <h2 class="worksheader">Photography</h2>
+            </section>
+
+            <section class="worksgallery">
+                <figure class="gallery">
+                    <img src="pictures/mount.jpg">
+                    <img src="pictures/erm.jpg">
+                    <img src="pictures/florence.jpg">
+                    <img src="pictures/oops.jpg">
+                    <img src="pictures/insertnamehere.jpg">
+                    <img src="pictures/cool.jpg">
+                </figure>
+            </section>
+        </article>
+
+        <article class="divtemp3" id="designdirect">
+            <section>
+                <h2 class="worksheader">Photoshop/AfterEffects</h2>
+            </section>
+
+            <section class="worksgallery">
+                <figure class="gallery">
+                    <img id="cipgif" src="pictures/cip.gif">
+                    <img id="cip" src="pictures/cip.jpg">
+                    <img src="pictures/agmposter.jpg">
+                </figure>
+            </section>
+        </article>
+
+        <article class="divtemp2" id="filmdirect">
+            <section>
+                <h2 class="worksheader">Films</h2>
+            </section>
+
+            <section>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HqNaHIr54Sg" frameborder="0" allowfullscreen></iframe>
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/La8GjhBXaEQ" frameborder="0" allowfullscreen></iframe>
+
+                <iframe src="https://drive.google.com/file/d/0Bw3ZUpLjE8tjczhxVmN4eklCVjQ/preview" width="540" height="315"></iframe>
+            </section>
+        </article>
+
+
+        <footer>
+            <p>joshua lee. | 2016.</p>
+        </footer>
+    </article>
+
+
 </body>
+
 </html>
