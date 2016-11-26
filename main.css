@@ -1,83 +1,104 @@
+/*reset all elements*/
+article,
+aside,
 div,
-body,
-p,
-a,
+footer,
+header,
+h1,
 h2,
 h3,
-header,
+h4,
+h5,
+h6,
+p,
 nav,
-footer,
+body,
 head,
 img,
-aside,
-figure, iframe {
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
+section,
+figure,
+a,
+iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
+/*end of reset all elements*/
 
+/* import font */
 @font-face {
     font-family: "Roboto-Thin";
     src: url("fonts/Roboto-Thin.ttf") format("truetype");
 }
+/* end of importing font */
 
-html {
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-}
-
+/* body */
 body {
     font-family: "Roboto-Thin", sans-serif;
     background-color: rgb(56, 56, 56);
-    color: rgb(256, 256, 256);
+    color: rgb(252, 200, 247);
     overflow: auto;
     height: 100%;
 }
+/* end of body */
 
+/* container */
+.container {
+    height: 100vh;
+    width: 1200px;
+    margin: 0 auto;
+}
+/* end of container */
+
+/* header */
 header {
     float: left;
     text-align: center;
     margin-left: 10%;
     z-index: 98;
-    margin-top: -1em;
 }
+/* end of header */
 
-#weblogolink{
-    margin-left: -302px;
-    opacity: 0;
+/* website logo hover property */
+#weblogolink:hover {
+    filter: drop-shadow(2px 2px 3px rgb(0, 0, 0)) sepia(100%);
 }
+/* end of website logo hover property */
 
-#weblogolink:hover{
-    opacity:1; 
-}
-
-
+/* navigation bar */
 nav {
     color: rgb(245, 245, 245);
     font-size: 25px;
     z-index: 99;
     margin-left: 55%;
-    padding-top: 0.05em;
+    padding-top: 1.2em;
 }
+/*end of navigation bar */
 
+/* links */
 a {
     color: inherit;
     text-decoration: inherit;
     padding-left: 1em;
     padding-right: 1em;
 }
+/* end of  links */
 
+/* links hover*/
 a:hover {
-    color: rgb(252, 0, 198);
-    text-decoration: underline; 
+    filter: sepia(100%);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
+/* end of links hover*/
 
-.pageid{
-    color: rgb(240, 50, 180);
-    text-decoration: underline;
+/* page identification */
+.pageid {
+    filter: sepia(100%);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
+/* end of page identification */
 
+/* quick section navigation */
 #homeskipnav {
     position: fixed;
     color: rgb(245, 245, 245);
@@ -125,11 +146,15 @@ a:hover {
     max-height: 23px;
     left: -10em;
 }
+/* end of quick section navigation */
 
+/* quick section navigation arrow */
 #skipnavarrow {
     color: rgba(256, 256, 256, 1);
 }
+/* end of quick section navigation arrow */
 
+/* quick section navigation hover */
 #homeskipnav:active,
 #homeskipnav:focus,
 #homeskipnav:hover {
@@ -153,13 +178,9 @@ a:hover {
     color: rgba(256, 256, 256, 1);
     max-height: 120px;
 }
+/* end of quick section navigation hover */
 
-.container {
-    height: 100vh;
-    width: 1200px;
-    margin: 0 auto;
-}
-
+/* banners */
 #homebanner {
     height: 120vh;
     background-attachment: fixed;
@@ -169,10 +190,49 @@ a:hover {
     background-color: rgb(56, 56, 56);
 }
 
+#profilebanner {
+    height: 120vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(pictures/profilebanner.jpg);
+    background-color: rgb(67, 132, 150);
+}
+
+#worksbanner {
+    height: 120vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(pictures/worksbanner.jpg);
+    background-color: rgb(32, 58, 92);
+}
+
+#wipbanner {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(pictures/wipbanner.jpg);
+    background-color: rgb(56, 56, 56);
+}
+/* end of banners */
+
+/* page mains */
 #home {
     height: 90vh;
 }
 
+#profile {
+    height: 90vh;
+}
+
+#works {
+    height: 90vh;
+}
+/* end of page mains */
+
+/* home specific styles */
 .intro {
     background-color: rgb(56, 56, 56);
     text-align: center;
@@ -217,6 +277,7 @@ a:hover {
 .socialicon {
     width: 40%;
     margin: 0 auto;
+    padding-top: 1em;
     padding-bottom: 3em;
 }
 
@@ -230,35 +291,26 @@ a:hover {
     color: rgb(252, 200, 247);
 }
 
-footer {
+/* end of home specific styles */
+
+/* section templates */
+.divtemp1 {
     background-color: rgb(56, 56, 56);
-    padding: 0.5em;
-    padding-left: 1em;
-    text-align: right;
-    font-size: 15pt;
-    color: rgb(252, 200, 247);
+    min-height: 110vh;
 }
 
-#profilebanner {
-    height: 120vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-image: url(pictures/profilebanner.jpg);
+.divtemp2 {
+    background-color: rgb(32, 58, 92);
+    min-height: 110vh;
+}
+
+.divtemp3 {
     background-color: rgb(67, 132, 150);
+    min-height: 110vh;
 }
+/* end of section templates */
 
-#profile {
-    height: 90vh;
-}
-
-.presectionheader {
-    position: relative;
-    top: 35%;
-    margin: 0 auto;
-    font-size: 50pt;
-}
-
+/* presection styles*/
 .presection {
     margin: 0 auto;
     width: 50%;
@@ -269,22 +321,26 @@ footer {
     line-height: 1.5em;
 }
 
-.textheader {
-    font-size: 28px;
-    margin-left: 10%;
-    padding-top: 2em;
+.presectionheader {
+    position: relative;
+    top: 35%;
+    margin: 0 auto;
+    font-size: 40pt;
 }
+/* end of presection styles */
 
-.divtemp2 {
-    background-color: rgb(32, 58, 92);
-    min-height: 110vh;
-}
-
+/* text section styles */
 .profiledivlayout {
     margin-left: 10%;
     width: 90%;
     font-size: 15pt;
     float: left;
+}
+
+.textheader {
+    font-size: 28px;
+    margin-left: 10%;
+    padding-top: 2em;
 }
 
 .text {
@@ -293,13 +349,15 @@ footer {
     margin-top: 0.5em;
     line-height: 1.5em;
     text-align: justify;
-    border: 2px solid rgb(265, 265, 265);
+    border: 2px solid rgb(252, 200, 247);
     padding: 1em;
-    max-height: 80vh;
+    max-height: 75vh;
     overflow: auto;
     float: left;
 }
+/* end of text section styles */
 
+/* image & caption styles*/
 .pic {
     width: 45%;
     margin-top: 0.5em;
@@ -313,16 +371,7 @@ footer {
     font-size: 14pt;
 }
 
-.divtemp3 {
-    background-color: rgb(67, 132, 150);
-    min-height: 110vh;
-}
-
-.divtemp1 {
-    background-color: rgb(56, 56, 56);
-    min-height: 110vh;
-}
-
+/* image specific style*/
 #bbpic {
     width: 40vh;
 }
@@ -332,20 +381,10 @@ footer {
     width: 300px;
     left: -1em;
 }
+/* end of image specific style */
+/* end of image & caption styles */
 
-#worksbanner {
-    height: 120vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-image: url(pictures/worksbanner.jpg);
-    background-color: rgb(32, 58, 92);
-}
-
-#works {
-    height: 90vh;
-}
-
+/* works section header */
 .worksheader {
     font-size: 35px;
     padding-top: 1em;
@@ -354,7 +393,9 @@ footer {
     margin: 0 auto;
     text-align: center;
 }
+/* end of works section header */
 
+/* works gallery */
 .worksgallery {
     margin-left: 10%;
     width: 805px;
@@ -371,21 +412,20 @@ footer {
     opacity: 0;
 }
 
-
-
-
-
-#wipbanner {
-    height: 100vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-image: url(pictures/wipbanner.jpg);
-    background-color: rgb(56, 56, 56);
-}
-
-iframe{
+iframe {
     display: block;
     margin: 0 auto;
     padding: 2em;
 }
+/* end of works gallery */
+
+/* footer */
+footer {
+    background-color: rgb(56, 56, 56);
+    padding: 0.5em;
+    padding-left: 1em;
+    text-align: right;
+    font-size: 15pt;
+    color: rgb(252, 200, 247);
+}
+/* end of footer */
