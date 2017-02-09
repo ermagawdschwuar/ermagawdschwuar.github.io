@@ -56,7 +56,7 @@ ul {
     src: url("fonts/Montserrat-Regular.otf") format("opentype");
 }
 
-@font-face {
+@font-face{
     font-family: "Raleway-Medium";
     src: url("fonts/Raleway-Medium.ttf") format("truetype");
 }
@@ -149,33 +149,30 @@ a:hover {
 #profilepic {
     float: left;
     margin-left: 5%;
-    margin-top: 5%;
-}
-
-#profilepic img {
-    width: 80%;
+    margin-top: 3%;
 }
 
 #profilepic figcaption {
-    width: 80%;
     text-align: center;
     font-size: 50px;
     font-family: "LeagueGothic-Regular";
 }
 
-#introtext {
+#introtext{
+    width: 55%;
     text-align: justify;
     font-size: 30px;
-    clear: right;
+    margin-left: 35%;
     line-height: 1.5em;
+    margin-top: 1em;
     position: relative;
-    top: 4em;
-    margin-right: 5%;
+    top: 3em;
 }
 
 #contact {
     background-image: url(images/crossword.png);
     box-shadow: 2px 2px 10px #888888;
+    height: 90vh;
 }
 
 .whiteboxheader {
@@ -216,7 +213,7 @@ form {
     width: 60%;
     font-size: 20px;
     box-sizing: border-box;
-    margin-bottom: 5%;
+    text
 }
 
 input {
@@ -347,68 +344,4 @@ footer {
     text-align: center;
     font-size: 30px;
     padding: 2%;
-}
-
-.mobilenav {
-    display: none;
-}
-
-@media screen and (max-width: 880px) {
-    .navigate {
-        display: none;
-    }
-    .mobilenav {
-        display: inline;
-    }
-    nav {
-        padding: 0;
-        padding-top: 2%;
-    }
-    .greeting {
-        font-size: 40px;
-    }
-    #profilepic {
-        float: none;
-        margin: 0;
-        padding: 0;
-        padding-top: 5%;
-        text-align: center;
-    }
-    #profilepic img {
-        width: 50%;
-    }
-    #profilepic figcaption {
-        margin: 0 auto;
-        font-size: 40px;
-    }
-    #introtext {
-        width: 80%;
-        font-size: 22px;
-        margin: 0 auto;
-        margin-bottom: 25%;
-    }
-    .text {
-        font-size: 20px;
-    }
-    .socialmedia {
-        display: block;
-        margin: 0 auto;
-        padding: 5%;
-    }
-    .socialmedia img {
-        width: 100%;
-    }
-    .whitebox {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-    
-    .text {
-        flex: 1;
-    }
-    
-    .submitbutton input {
-        width: 25%;
-    }
 }

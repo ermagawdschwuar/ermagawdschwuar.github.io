@@ -4,399 +4,100 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Joshua Lee's Profile</title>
+    <title>Joshua Lee</title>
     <!--
-            WCD CA1 	   
-            Filename: profile.html 	   
-            Author: P1625439
-            Date: 27 November 2016
-      -->
+WCD CA2   
+Filename: profile.html 	   
+Author: P1625439
+Date: 27 Nov 2016
+-->
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="pictures/icon.ico" type="image/ico" sizes="16x16">
+    <link rel="icon" href="images/icon.ico" type="image/ico" sizes="16x16">
+    <link rel="icon" href="images/icon.ico" type="image/ico" sizes="16x16">
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
 </head>
-<!-- end of head -->
 
-<!-- body -->
-
-<body>
-    <!-- container -->
-    <article class="container" id="profilebanner">
-        <!-- website logo -->
+<body class="drawer drawer--right">
+    <section class="navigate">
         <header>
-            <h1>
-                <a href="index.html">
-                    <img id="weblogolink" src="pictures/websitelogov2.png" alt="website icon"></a>
-            </h1>
+            <h1>JOSHUA LEE</h1>
         </header>
-        <!-- end of website logo -->
-
         <!-- navigation bar -->
         <nav>
-            <h4><a href="index.html">home</a>
-                <a href="profile.html" class="pageid">profile</a>
-                <a href="works.html">works</a>
-                <a href="blog.html">blog</a>
-            </h4>
+            <ul>
+                <li><a href="index.html" class="pageid">HOME</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn"><a href="profile.html">PROFILE</a></button>
+                    <div class="dropdown-content">
+                        <a href="life.html">LIFE</a	>
+                            <a href="education.html">EDUCATION</a>
+                        <a href="cca.html">CCAs</a>
+                        <a href="hobby.html">HOBBIES</a>
+                    </div>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+            </ul>
         </nav>
-        <!-- end of navigation bar -->
+    </section>
+    <!-- start of mobile nav-->
+    <header role="banner" class="mobilenav">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
 
-        <!--quick section navigation -->
-        <aside id="profileskipnav">
-            <!-- presection links -->
-            <p>
-                <a href=#lifedirect>
-            skip to: life</a> <span id="skipnavarrow">&lt;</span>
-                <br>
-                <a href="#edudirect">
-            education</a>
-                <br>
-                <a href="#ccadirect">
-            ccas</a>
-                <br>
-                <a href="#hobbiesdirect">
-            hobbies</a>
-                <br>
-                <a href="#profilebanner">
-                back to top
-                </a>
-            </p>
-        </aside>
-        <!-- end of quick section navigation -->
+        <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+                <li>MENU</li>
+                <li><a class="drawer-brand" href="index.html">HOME</a></li>
+                <li class="drawer-dropdown">
+                    <a class="drawer-brand" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+            PROFILE <span class="drawer-caret"></span>
+          </a>
+                    <ul class="drawer-dropdown-menu">
+                        <li><a class="drawer-brand" href="life.html">LIFE</a></li>
+                        <li><a class="drawer-brand" href="education.html">EDUCATION</a></li>
+                        <li><a class="drawer-brand" href="cca.html">CCAs</a></li>
+                        <li><a class="drawer-brand" href="hobby.html">HOBBIES</a></li>
+                    </ul>
+                </li>
+                <li><a class="drawer-brand" href="works.html">WORKS</a></li>
+                <li><a class="drawer-brand" href="blog.html">BLOG</a></li>
 
-        <!-- profile -->
-        <article id="profile"></article>
+            </ul>
+        </nav>
+    </header>
+    <!-- end of mobile nav-->
+    <section class="greeting">
+        <h2>
+            profile.
+        </h2>
+    </section>
 
-        <!-- life presection -->
-        <article class="intro" id="lifedirect">
-            <!-- presection header -->
-            <h1 class="presectionheader">LIFE.</h1>
-            <!-- section links -->
-            <section class="presection">
-                <p>
-                    <a href="#christdirect">Christian</a>
-                    <br>
-                    <a href="#familydirect">Family</a>
-                </p>
-            </section>
-        </article>
-        <!-- end of life presection -->
+    <section class="whitebox">
+        <h2 id="profilegreeting">
+            Click on the different sections to find out more:
+        </h2>
+        <section class="profile">
+            <a href="life.html" class="profilebutton">Life</a>
+            <a href="education.html" class="profilebutton">Education</a>
+            <a href="cca.html" class="profilebutton">CCAs</a>
+            <a href="hobby.html" class="profilebutton">Hobbies</a>
+        </section>
+    </section>
 
-        <!-- christian section -->
-        <article class="divtemp2" id="christdirect">
-            <!-- section header -->
-            <h2 class="textheader">CHRISTIAN.</h2>
-            <section class="profiledivlayout">
-                <!-- section text -->
-                <p class="text">
-                    I grew up in Bethesda Frankel Estate Church, as my parents were Christian. Throughout my teens I took the reponsibility to be serious about my faith, and tried my best to grow. I was baptised on the 14th of December, 2014. I have found many of my good friends in church and they are really great people. I found that I have really grown over the years and I'm thankful for that.</p>
-                <!-- end of section text -->
-
-                <!-- section image -->
-                <figure>
-                    <img class="pic" src="pictures/church.png" alt="A picture of two of my church friends and I.">
-                    <!-- image caption -->
-                    <figcaption class="caption">
-                        My church friends and I.
-                    </figcaption>
-                    <!-- end of image caption-->
-                </figure>
-                <!-- end of section image -->
-            </section>
-        </article>
-        <!-- end of christian section -->
-
-        <!-- family section -->
-        <article class="divtemp3" id="familydirect">
-            <!-- section header -->
-            <h2 class="textheader">FAMILY.</h2>
-            <section class="profiledivlayout">
-                <!-- section text -->
-                <p class="text">
-                    On the right is a picture of my family and I in Europe, December 2015. I have 2 older sisters, Johanna and Joelle, aged 21 and 20 respectively. My father works in Manulife as a Quality Assurance Director, while my mother is mainly a housewife, while doing other business projects with her friends on the sideline. My family are a peculiar bunch, but I still love and appreciate them anyways. They're still family, right?</p>
-                <!-- end of section text -->
-
-                <!-- section image -->
-                <figure>
-                    <img class="pic" src="pictures/family.png" alt="A picture of my family and I on the top of Mount Titlis in Switzerland.">
-                    <!-- image caption -->
-                    <figcaption class="caption">
-                        A family picture on the top of Mount Titlis, Switzerland.
-                    </figcaption>
-                    <!-- end of image caption -->
-                </figure>
-                <!-- end of section image -->
-            </section>
-        </article>
-        <!-- end of family  section -->
-
-        <!-- education presection -->
-        <article class="intro" id="edudirect">
-            <!-- presection header -->
-            <h2 class="presectionheader">EDUCATION.</h2>
-            <!-- section links -->
-            <section class="presection">
-                <p>
-                    <a href="#primarydirect">Geylang Methodist School (Primary)</a>
-                    <br>
-                    <a href="#secondarydirect">St. Andrew's Secondary School</a>
-                    <br>
-                    <a href="#polydirect">Singapore Polytechnic</a>
-                </p>
-                <!-- end of section links -->
-            </section>
-        </article>
-        <!-- end of education presection -->
-
-        <!-- primary school section -->
-        <article class="divtemp2" id="primarydirect">
-            <!-- section header -->
-            <h2 class="textheader">PRIMARY SCHOOL. (2006 - 2011)</h2>
-            <section class="profiledivlayout">
-                <!-- section text -->
-                <p class="text">
-                    I attended Geylang Methodist School (Primary) during my primary years. I did very well throughout Primary 1 - Primary 4, mainly thanks to my parents being strict yet graceful in my studies. However, I wish I did not take their authority for granted as I got too playful and did not focus on my studies. I still did well for PSLE, however, I do wish I had put more effort in my studies. Nonetheless, I do not regret anything, as it paved the way to where I am now. I graduated with a PSLE T-Score of 229.</p>
-                <!-- end of section text -->
-
-                <!-- section image -->
-                <figure>
-                    <img class="pic" src="pictures/primary.jpg" alt="A picture of my favourite primary school teacher and I at a carnival.">
-                    <!-- image caption -->
-                    <figcaption class="caption">
-                        My favourite primary school teacher and I at a carnival.
-                    </figcaption>
-                    <!-- end of image caption -->
-                </figure>
-                <!-- end of section image -->
-            </section>
-        </article>
-        <!-- end of primary school section -->
-
-        <!-- secondary school section -->
-        <article class="divtemp3" id="secondarydirect">
-            <!-- section header -->
-            <h2 class="textheader">SECONDARY SCHOOL. (2012 - 2015)</h2>
-            <section class="profiledivlayout">
-                <!-- section text -->
-                <p class="text">
-                    Although I was originally posted to my primary school affliate, Geylang Methodist School (Secondary), Mr Goh, the vice-principal of St. Andrew's Secondary School at that time, interviewed me for my appeal and immediately accepted me into his school. I was very grateful as this allowed me to join my good friend, Khoo Zhenyu, at this all-boys school. Both of us joined the Boys' Brigade, as a continuation from our primary school Co-Curricular Activity (CCA). There, I learnt many important lessons such as the qualities of leadership, discipline and such. While I was very involved in the Boys' Brigade, I also learnt to balance my time well for my studies in Secondary 3 and 4. I took my 'O' Levels in November 2015, doing decently well with a raw L1R5 of 15 and L1R4 of 12.</p>
-                <!-- end of section text -->
-
-                <!-- section image -->
-                <figure>
-                    <img class="pic" src="pictures/secondary.jpg" alt="A picture of a few of my classmates and I in class.">
-                    <!-- image caption -->
-                    <figcaption class="caption">
-                        Some of my classmates in my Secondary 4 year.
-                    </figcaption>
-                    <!-- end of image caption -->
-                </figure>
-                <!-- end of section image -->
-            </section>
-        </article>
-        <!-- end of secondary school section -->
-
-        <!-- polytechnic section -->
-        <article class="divtemp2" id="polydirect">
-            <!-- section header -->
-            <h2 class="textheader">POLYTECHNIC. (2016 - now)</h2>
-            <section class="profiledivlayout">
-                <!-- section text -->
-                <p class="text">
-                    I am currently studying in Singapore Polytechnic, for a Diploma in Infocomm Security. I really like my classmates and the classes I attend. I joined the school's club, DMIT Club, as a subcommittee member of Publications. I am also taking Krav Maga in SP, which is a self-defense martial art. I really hope I do can well in my studies here and get a nice job in the future.
-                </p>
-                <!-- end of section text -->
-
-                <!-- section image -->
-                <figure>
-                    <img class="pic" src="pictures/poly.jpg" alt="A picture of my Polytechnic classmates and I.">
-                    <!-- image caption -->
-                    <figcaption class="caption">
-                        The bunch that I see in school everyday.
-                    </figcaption>
-                    <!-- end of image caption -->
-                </figure>
-                <!-- end of section image -->
-            </section>
-        </article>
-        <!-- end of polytechnic section -->
-
-        <!-- ccas presection -->
-        <article class="intro" id="ccadirect">
-            <!-- presection header -->
-            <h2 class="presectionheader">Co-Curricular Activities.</h2>
-            <!-- section links -->
-            <section class="presection">
-                <p>
-                    <a href="#bbdirect">Boys' Brigade</a>
-                    <br>
-                    <a href="#dmitdirect">DMIT Club</a>
-                    <br>
-                    <a href="#kravdirect">Krav Maga</a>
-                </p>
-            </section>
-        </article>
-        <!-- end of ccas presection -->
-
-        <!-- boys' brigade section -->
-        <article class="divtemp2" id="bbdirect">
-            <!-- section header -->
-            <h2 class="textheader">BOYS' BRIGADE. (2009 - now)</h2>
-            <section class="profiledivlayout">
-                <!-- section text -->
-                <p class="text">
-                    When I was Primary 4, I joined the 21st Junior Boys' Brigade in Geylang Methodist School (Primary), primarily because my father was an old BB Boy and he had told me many great stories about his time there. I had lots of fun in the Junior section, and when I went to St. Andrew's Secondary, I continued on to the 7th company.
-                    <br> In the 4 years of my secondary school, I really learnt alot from my seniors and officers and grew very close to my batchmates - thanks to the many training camps we were through together. I learnt alot about leadership and was given responsibilities such as Games I/C, Squad Leader and have been a committee member of many events and even chaired my own event. I am really thankful for the opportunities I had to grow and to learn in my four years.
-                    <br> At the end of my four years, I took up the challenge to go back to serve after graduation as a Primer, which is my current position in the 7th Company. I hope to grow and learn more, while juggling with my studies and my other CCAs.
-                </p>
-                <!-- section text -->
-
-                <!-- section image -->
-                <figure>
-                    <img class="pic" id="bbpic" src="pictures/bb.jpg" alt="A picture of my batchmates and I throwing our BB caps after passing out.">
-                    <!-- image caption -->
-                    <figcaption class="caption" id="bbcap">
-                        My BB Batchmates and I on our POP.
-                    </figcaption>
-                    <!-- end of image caption -->
-                </figure>
-                <!-- end of section image -->
-            </section>
-        </article>
-        <!-- end of boys' brigade section -->
-
-        <!-- dmit club section -->
-        <article class="divtemp3" id="dmitdirect">
-            <!-- section header -->
-            <h2 class="textheader">DMIT CLUB. (2016 - now)</h2>
-            <section class="profiledivlayout">
-                <!-- section text -->
-                <p class="text">
-                    After attending DMIT Club's Freshman Orientation Camp (FOC) 'Aftermath' before my new poly life started, I really grew to love the people and the seniors there (even though I could only go for two out of four of the camp days). I then became very committed to the club, regularly going to the club room (mainly to do my schoolwork) and to their events. This gave me the opportunity to really bond with my seniors and batchmates.
-                    <br> When they were interviewing for Year 1 Subcommittee members, I decided to join to contribute back to the club. I was then given a position under Publications, which was mainly managing social media to announce upcoming events. This gave me the opportunity to learn many new things such as Adobe Photoshop.
-                    <br> Being in the club also gave me the opportunity to join Organising Committees and help out other events. Currently, I am in the design team for Escape Room, which will be held in January 2017. I am also part of the next year's FOC camp planning committee. I am very grateful for the opportunities I had through DMIT Club and for the wonderful people there.
-                </p>
-                <!-- end of section text-->
-
-                <!-- section image -->
-                <figure>
-                    <img class="pic" src="pictures/dmit.jpg" alt="A picture of my friend Gabriel and I during a photoshoot for our event, Checkered vs Stripes Outfit of the Day (OOTD)">
-                    <!-- image caption -->
-                    <figcaption class="caption">
-                        One of the events that the Baristas held was the DMIT Checkered vs Stripes Outfit of the Day (OOTD).
-                    </figcaption>
-                    <!-- end of image caption -->
-                </figure>
-                <!-- end of section image -->
-            </section>
-        </article>
-        <!-- end of dmit club section -->
-
-        <!-- krav maga section -->
-        <article class="divtemp2" id="kravdirect">
-            <!-- section header -->
-            <h2 class="textheader">KRAV MAGA. (2016 - now)</h2>
-            <section class="profiledivlayout">
-                <!-- section text -->
-                <p class="text">
-                    When I joined Singapore Polytechnic, I initially wanted to join football as I loved it and wanted to join a CCA that can improve my fitness. However, I did not pass the try outs. Hence, I decided to take Krav Maga, which was a very interesting "martial art" (it's not really a martial art, it's more of a self-defense class).
-                    <br> At Krav Maga, I made quite good friends with some of my batchmates as well as the seniors in the committee. I found myself improving my techniques and loving the classes that were held every Tuesdays and Thursdays. I am aiming to go for my P1 grading in January 2017.
-                </p>
-                <!-- end of section text -->
-
-                <!-- section image -->
-                <figure>
-                    <img class="pic" src="pictures/krav.jpg" alt="A group picture of the krav family after a very special beach training.">
-                    <!-- image caption -->
-                    <figcaption class="caption">
-                        A group picture of the krav family after a very special beach training.
-                    </figcaption>
-                    <!-- end of image caption -->
-                </figure>
-                <!-- end of section image -->
-            </section>
-        </article>
-        <!-- end of krav maga section -->
-
-        <!-- hobbies presection -->
-        <article class="intro" id="hobbiesdirect">
-            <!-- presection header -->
-            <h2 class="presectionheader">Hobbies.</h2>
-            <!-- section direct -->
-            <section class="presection">
-                <p>
-                    <a href="#footballdirect">Football</a>
-                    <br>
-                    <a href="#mediadirect">Media</a>
-                </p>
-            </section>
-        </article>
-        <!-- end of hobbies presection -->
-
-        <!-- football section -->
-        <article class="divtemp2" id="footballdirect">
-            <!-- section header -->
-            <h2 class="textheader">FOOTBALL.</h2>
-            <section class="profiledivlayout">
-                <!-- section text -->
-                <p class="text">
-                    I love football. I got into football when I was in Primary 4, as my friends were all playing and watching football. However, I did not really follow any single team. I was just playing both the game FIFA and in real life with my friends.
-                    <br> In Secondary 1 &amp; 2, my classmates were also very much into football. We played every single day during recess and we had lots of fun. There, I trained to be a defender and a goalkeeper - primarily being a defender.
-                    <br> When I changed classes in Secondary 3, my classmates were similar - however we only played during our Physical Education classes instead of playing everyday during recess. I trained and developed as a goalkeeper throughout Secondary 3 &amp; 4, and my classmates were really supportive and rated my ability.
-                    <br> I became a fan of Arsenal F.C. when I was Secondary 4, as I loved the style of their game and the players they had. I've been watching their matches whenever I can. I find myself being very passionate about the club and hope they win the premier league this season!
-                </p>
-                <!-- end of section text -->
-
-                <!-- section image -->
-                <figure>
-                    <img class="pic" src="pictures/football.jpg" alt="Some of my Secondary 2 classmates and I after a game of futsal.">
-                    <!-- image caption -->
-                    <figcaption class="caption">
-                        Some of my Secondary 2 classmates and I after a game of futsal.
-                    </figcaption>
-                    <!-- end of image caption -->
-                </figure>
-                <!-- end of section image -->
-            </section>
-        </article>
-        <!-- end of football section -->
-
-        <!-- media section -->
-        <article class="divtemp3" id="mediadirect">
-            <!-- section header -->
-            <h2 class="textheader">MEDIA.</h2>
-            <section class="profiledivlayout">
-                <!-- section text -->
-                <p class="text">
-                    I love anything to do with media - be it physical things like filming, directing and photography to things like editing, Photoshop, AfterEffects. It is something I have found myself loving to do - which made me actually want to study for a Diploma in Mass Communication in Ngee Ann Polytechnic. Unfortunately, I was not accepted in.
-                    <br> It is probably also another reason why I joined Publications in DMIT Club - because we are mainly doing those things. I am very thankful to be in Publications as it challenged me to learn many things quickly and I am glad - because I realised how much I have learnt over the few months.
-                    <br> I also took some filming lessons and found it to be very exciting! I wish that Singapore had a big hollywood-like film industry as I would probably be doing films instead. One of my favourite directors is Christopher Nolan. His films are always so amazing and I could watch any of his films over and over again.
-                    <br> But then again, this is just a hobby of mine. I still like doing Infocomm Security and will pursue it further, but I do wish that I would have time for my hobbies!
-                </p>
-                <!-- end of section text-->
-
-                <!-- section image -->
-                <figure>
-                    <img class="pic" src="pictures/design.jpg" alt="a picture of my fellow publications subcommittee and I">
-                    <!-- image caption -->
-                    <figcaption class="caption">
-                        A picture of my fellow publications subcommittee and I.
-                    </figcaption>
-                    <!-- end of image caption -->
-                </figure>
-                <!-- end of section image-->
-            </section>
-        </article>
-        <!-- end of media section -->
-
-        <!-- footer -->
-        <footer>
-            <p>&copy; copyright 2016 | joshua lee. | follow me: <a href="https://instagram.com/ermagawdschwuar" target="_blank">instagram</a> <a href="https://facebook.com/omgjoshie" target="_blank">facebook</a> <a href="https://www.snapchat.com/add/totallynotjoshi" target="_blank"> snapchat </a> </p>
-        </footer>
-        <!-- end of footer-->
+    <footer>
+        <p>&copy; copyright 2016 | joshua lee.</p>
+    </footer>
     </article>
-    <!-- end of container -->
+    <script src="menu.js"></script>
 </body>
-<!-- end of body -->
+
 </html>
-<!-- end of html-->

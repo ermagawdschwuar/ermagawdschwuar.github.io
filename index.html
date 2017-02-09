@@ -6,121 +6,148 @@
     <meta charset="utf-8">
     <title>Joshua Lee</title>
     <!--
-            WCD CA1 	   
-            Filename: index.html 	   
-            Author: P1625439
-            Date: 27 Nov 2016
-      -->
+WCD CA2 	   
+Filename: index.html 	   
+Author: P1625439
+Date: 27 Nov 2016
+-->
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="pictures/icon.ico" type="image/ico" sizes="16x16">
+    <link rel="icon" href="images/icon.ico" type="image/ico" sizes="16x16">
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
 </head>
-<!-- end of head -->
 
-<!-- body -->
-
-<body>
-    <!-- container -->
-    <article class="container" id="homebanner">
-        <!-- website logo-->
+<body class="drawer drawer--right">
+    <section class="navigate">
         <header>
-            <h1>
-                <a href="index.html">
-                    <img id="weblogolink" src="pictures/websitelogov2.png" alt="website icon"></a>
-            </h1>
+            <h1>JOSHUA LEE</h1>
         </header>
-        <!--  end of website logo -->
-
         <!-- navigation bar -->
         <nav>
-            <h4>
-                <a href="index.html" class="pageid">home</a>
-                <a href="profile.html">profile</a>
-                <a href="works.html">works</a>
-                <a href="blog.html">blog</a>
-            </h4>
+            <ul>
+                <li><a href="index.html" class="pageid">HOME</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn"><a href="profile.html">PROFILE</a></button>
+                    <div class="dropdown-content">
+                        <a href="life.html">LIFE</a	>
+                            <a href="education.html">EDUCATION</a>
+                        <a href="cca.html">CCAs</a>
+                        <a href="hobby.html">HOBBIES</a>
+                    </div>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+            </ul>
         </nav>
-        <!-- end of navigation bar -->
+    </section>
+    <!-- start of mobile nav-->
+    <header role="banner" class="mobilenav">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
 
-        <!-- quick section navigation -->
-        <aside id="homeskipnav">
-            <!-- presection links -->
-            <p>
-                <a href=#skipbanner>
-            skip to: intro</a> <span id="skipnavarrow">&lt;</span>
-                <br>
-                <a href="#contact" id="skipsocialnav">
-            social</a>
-                <br>
-                <a href="#homebanner">
-                back to top</a>
-            </p>
-        </aside>
-        <!-- end of quick section navigation -->
+        <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+                <li>MENU</li>
+                <li><a class="drawer-brand" href="index.html">HOME</a></li>
+                <li class="drawer-dropdown">
+                    <a class="drawer-brand" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+            PROFILE <span class="drawer-caret"></span>
+          </a>
+                    <ul class="drawer-dropdown-menu">
+                        <li><a class="drawer-brand" href="life.html">LIFE</a></li>
+                        <li><a class="drawer-brand" href="education.html">EDUCATION</a></li>
+                        <li><a class="drawer-brand" href="cca.html">CCAs</a></li>
+                        <li><a class="drawer-brand" href="hobby.html">HOBBIES</a></li>
+                    </ul>
+                </li>
+                <li><a class="drawer-brand" href="works.html">WORKS</a></li>
+                <li><a class="drawer-brand" href="blog.html">BLOG</a></li>
 
-        <!--  home -->
-        <section id="home"></section>
-        <!-- introduction -->
-        <article class="intro" id="skipbanner">
-            <!-- profile picture -->
-            <figure id="pp"><img src="pictures/pp.png" alt="A picture of myself" width="300"></figure>
-            <!-- introduction text -->
-            <section id="homeintro">
-                <p>
-                    Hey there, I'm Joshua Lee.
-                    <br> 17 years old, a year older every 22 March.
-                    <br> Freshman at Singapore Polytechnic, currently studying Infocomm Security Management.
-                    <br> Publications subcommittee member of DMIT Club.
-                    <br> Primer (Cadet Lieutenant) for the Boys' Brigade.
-                    <br> Taking Krav Maga, aiming to get my P1 grade in January 2017.
-                </p>
-            </section>
-            <!-- end of introduction text -->
-        </article>
-        <!-- end of introduction -->
+            </ul>
+        </nav>
+    </header>
+    <!-- end of mobile nav-->
+    <section class="greeting" id="home">
+        <h2>
+            hi;
+            <br> i'm joshua lee.
+        </h2>
+    </section>
 
-        <!-- contacts page -->
-        <article class="divtemp2" id="contact">
-            <!-- contacts page header-->
-            <h2 id="socialhead">
-                do check me out on other social media!
-            </h2>
-            <!-- end of contacts page header -->
+    <section class="whitebox">
+        <figure id="profilepic">
+            <img src="images/pp.png" id="ppimg">
+            <figcaption>JOSHUA LEE</figcaption>
+        </figure>
+        <ul id="introtext">
+            <li>Turning 18 as of 22 March this year.</li>
+            <li>Freshman at Singapore Polytechnic; Infocomm Security Management.</li>
+            <li>Publications subcommittee member of DMIT Club.</li>
+            <li>Primer (Cadet Lieutenant) for the Boys' Brigade.</li>
+            <li>Practitioner 1 of Krav Maga</li>
+        </ul>
+    </section>
 
-            <!-- social media -->
-            <section class="socialicon">
-                <!-- instagram -->
-                <a href="https://instagram.com/ermagawdschwuar" target="_blank"><img src="pictures/insta.png" alt="Instagram logo"></a>
-                <h2 class="socialword"><a href="https://instagram.com/ermagawdschwuar" target="_blank">Instagram</a></h2>
-            </section>
-            <!-- end of instagram-->
+    <section class="whitebox" id="contact">
+        <h2 class="whiteboxheader">Contact Me!</h2>
+        <section class="socialmedia">
+            <a href="https://instagram.com/ermagawdschwuar" target="_blank"><img src="images/insta.png" alt="Instagram logo"></a>
+            <h2><a href="https://instagram.com/ermagawdschwuar" target="_blank">Instagram</a></h2>
+        </section>
+        <section class="socialmedia">
+            <a href="https://facebook.com/omgjoshie" target="_blank"><img src="images/facebook.png" alt="Facebook logo"></a>
+            <h2 class="socialword"><a href="https://facebook.com/omgjoshie" target="_blank">Facebook</a></h2>
+        </section>
+        <section class="socialmedia">
+            <a href="https://www.snapchat.com/add/totallynotjoshi" target="_blank"><img src="images/snap.png" alt="Snapchat logo"></a>
+            <h2 class="socialword"><a href="https://www.snapchat.com/add/totallynotjoshi" target="_blank">Snapchat</a></h2>
+        </section>
 
-            <!-- facebook -->
-            <section class="socialicon">
-                <a href="https://facebook.com/omgjoshie" target="_blank"><img src="pictures/facebook.png" alt="Facebook logo"></a>
-                <h2 class="socialword"><a href="https://facebook.com/omgjoshie" target="_blank">Facebook</a></h2>
-            </section>
-            <!-- end of facebook -->
+        <form action="results.html">
+            <fieldset class="contactform">
+                <legend>Leave a message!</legend>
+                <label for="name">
+                    Name
+                    <input type="text" id="name" name="nameinput" placeholder=" John Doe">
+                </label>
+                <label for="email">
+                    Email
+                    <input type="email" id="email" name="emailinput" placeholder=" email@email.com">
+                </label>
+                <label for="phone">
+                    Phone Number
+                    <input type="tel" id="phone" name="phoneinput" placeholder=" 98765321">
+                </label>
+                <label for="message">
+                    Your message:
+                    <input type="text" id="msg" name="msginput" placeholder=" insert your text here...">
+                </label>
+            </fieldset>
+            <fieldset class="submitbutton">
+                <input type="submit" id="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
 
-            <!-- snapchat -->
-            <section class="socialicon">
-                <a href="https://www.snapchat.com/add/totallynotjoshi" target="_blank"><img src="pictures/snap.png" alt="Snapchat logo"></a>
-                <h2 class="socialword"><a href="https://www.snapchat.com/add/totallynotjoshi" target="_blank">Snapchat</a></h2>
-            </section>
-            <!-- end of snapchat -->
+    </main>
 
-        </article>
-        <!-- end of contacts page-->
-
-        <!-- footer -->
-        <footer>
-            <p>&copy; copyright 2016 | joshua lee.</p>
-        </footer>
-        <!-- end of footer-->
-
+    <footer>
+        <p>&copy; copyright 2016 | joshua lee.</p>
+    </footer>
     </article>
-    <!-- end of container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+    <script src="js/drawer/drawer.min.js" charset="utf-8"></script>
+    <script src="menu.js"></script>
 </body>
-<!-- end of body -->
+
 </html>
-<!-- end of html -->
