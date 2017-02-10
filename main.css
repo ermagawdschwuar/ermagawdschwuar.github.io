@@ -403,16 +403,17 @@ footer {
         text-align: center;
     }
     #profilepic img {
-        width: 30vw;
+        width: 60%;
     }
     #profilepic figcaption {
         margin: 0 auto;
-        font-size: 7vw;
-        width: 40%;
+        font-size: 300%;
+        width: 100%;
+        text-align: center;
     }
     #introtext {
         width: 80%;
-        font-size: 4vw;
+        font-size: 130%;
         margin: 0 auto;
         margin-bottom: 25%;
         text-align: center;
@@ -423,7 +424,7 @@ footer {
         margin-top: -10%;
     }
     .whiteboxheader {
-        font-size: 5vw;
+        font-size: 170%;
         padding: 5%;
     }
     .socialmedia {
@@ -432,15 +433,16 @@ footer {
         padding: 5%;
     }
     .socialmedia img {
-        width: 20vw;
+        width: 100%;
     }
     .socialmedia h2 {
-        font-size: 4vw;
+        font-size: 300%;
         margin: 0 auto;
     }
     .whitebox {
         display: flex;
         flex-direction: column;
+        min-height: 60vh;
         margin-top: 10%;
     }
     .submitbutton input {
@@ -454,20 +456,19 @@ footer {
         margin-bottom: 2%;
     }
     .whiteboxcontentheader {
-        font-size: 150%;
+        font-size: 130%;
         text-align: center;
         padding: 2%;
     }
     .pic {
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         float: none;
-        margin-left: 10%;
         margin-top: 1%;
         margin-bottom: 1%;
     }
     .caption {
-        font-size: 2vw;
+        font-size: 120%;
         width: 80%;
         margin: 0 auto;
         float: none;
@@ -476,7 +477,7 @@ footer {
     .text {
         width: 80%;
         margin: 0 auto;
-        font-size: 4vw;
+        font-size: 120%;
         border: 1px solid #000000;
         padding: 2%;
         margin-top: 2%;
@@ -492,11 +493,9 @@ footer {
         color: #000000;
     }
     #bbpic {
-        height: auto;
-        margin-left: 30vw;
+        width: 100%;
     }
     form {
         width: 80%;
     }
 }
-
