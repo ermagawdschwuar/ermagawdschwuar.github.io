@@ -118,7 +118,6 @@ a:hover {
 }
 
 .navigate {
-    display: none;
     width: 100%;
     background-color: #3E50B4;
     position: fixed;
@@ -127,7 +126,6 @@ a:hover {
 }
 
 .greeting {
-    display: none;
     font-size: 4vw;
     text-align: center;
     font-family: "Gotham-Light";
@@ -136,21 +134,8 @@ a:hover {
 }
 
 .mobilespacer {
-    display: inline;
+    display: none;
 }
-
-.mobilenav {
-        display: inline;
-        width: 100%;
-        background-color: #FF4081;
-        position: fixed;
-        box-shadow: 1px 1px 10px #888888;
-        z-index: 99;
-    }
-    .mobilenav h1 {
-        font-size: 100%;
-        color: #000000;
-    }
 
 .whitebox {
     margin: 0 auto;
@@ -422,11 +407,12 @@ footer {
     }
     #profilepic figcaption {
         margin: 0 auto;
-        font-size: 6vw;
+        font-size: 7vw;
+        width: 40%;
     }
     #introtext {
         width: 80%;
-        font-size: 3vw;
+        font-size: 4vw;
         margin: 0 auto;
         margin-bottom: 25%;
         text-align: center;
