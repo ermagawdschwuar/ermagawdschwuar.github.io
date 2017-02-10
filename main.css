@@ -498,5 +498,6 @@ footer {
     }
     form {
         width: 80%;
+        margin-bottom: 5vh;
     }
 }
