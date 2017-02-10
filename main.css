@@ -42,23 +42,27 @@ ul {
 /* import font */
 
 @font-face {
-    font-family: "LeagueGothic-Regular";
-    src: url("fonts/LeagueGothic-Regular.otf") format("opentype");
+    font-family: 'LeagueGothic-Regular';
+    src: url('fonts/LeagueGothic-Regular.eot');
+    src: url('fonts/LeagueGothic-Regular.woff2') format('woff2'), url('fonts/LeagueGothic-Regular.woff') format('woff'), url('fonts/LeagueGothic-Regular.ttf') format('truetype'), url('fonts/LeagueGothic-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Gotham-Light";
-    src: url("fonts/Gotham-Light.otf") format("opentype");
+    font-family: 'Gotham-Light';
+    src: url('fonts/Gotham-Light.eot');
+    src: url('fonts/Gotham-Light.woff2') format('woff2'), url('fonts/Gotham-Light.woff') format('woff'), url('fonts/Gotham-Light.ttf') format('truetype'), url('fonts/Gotham-Light.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Montserrat-Regular";
-    src: url("fonts/Montserrat-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "Raleway-Medium";
-    src: url("fonts/Raleway-Medium.ttf") format("truetype");
+    font-family: 'Raleway-Medium';
+    src: url('fonts/Raleway-Medium.eot');
+    src: url('fonts/Raleway-Medium.woff2') format('woff2'), url('fonts/Raleway-Medium.woff') format('woff'), url('fonts/Raleway-Medium.ttf') format('truetype'), url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -75,11 +79,10 @@ body {
 
 .container {
     margin: 0 auto;
-    height: 100vh;
 }
 
 header {
-    font-size: 40px;
+    font-size: 30px;
     float: left;
     padding-top: 0.5%;
     padding-left: 5%;
@@ -91,7 +94,7 @@ nav {
     width: 60%;
     float: right;
     text-align: right;
-    font-size: 40px;
+    font-size: 30px;
     padding-right: 5%;
     padding-top: 1%;
     font-family: "LeagueGothic-Regular";
@@ -115,7 +118,6 @@ a:hover {
 }
 
 .navigate {
-    height: 9%;
     width: 100%;
     background-color: #3E50B4;
     position: fixed;
@@ -124,15 +126,20 @@ a:hover {
 }
 
 .greeting {
-    font-size: 60px;
+    font-size: 4vw;
     text-align: center;
-    padding: 18%;
     font-family: "Gotham-Light";
+    padding-top: 15%;
+    height: 30vw;
+}
+
+.mobilespacer {
+    display: none;
 }
 
 .whitebox {
     margin: 0 auto;
-    min-height: 80vh;
+    min-height: 40vw;
     max-width: 80%;
     background-image: url(images/crossword.png);
     box-shadow: 2px 2px 10px #888888;
@@ -140,37 +147,39 @@ a:hover {
     margin-top: 5%;
 }
 
-#home {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 #profilepic {
     float: left;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 5vw;
+    padding: 0;
 }
 
 #profilepic img {
-    width: 80%;
+    width: 20vw;
 }
 
 #profilepic figcaption {
-    width: 80%;
+    width: 20vw;
     text-align: center;
     font-size: 50px;
     font-family: "LeagueGothic-Regular";
 }
 
 #introtext {
-    text-align: justify;
-    font-size: 30px;
-    clear: right;
+    text-align: left;
+    font-size: 1.8vw;
+    width: 50%;
+    float: right;
     line-height: 1.5em;
     position: relative;
     top: 4em;
     margin-right: 5%;
+    padding-left: 5%;
+    border-left: 3px solid #000000;
+}
+
+#introtext li {
+    list-style: none;
 }
 
 #contact {
@@ -187,7 +196,7 @@ a:hover {
 
 .whiteboxcontentheader {
     text-align: left;
-    font-size: 40px;
+    font-size: 2.5vw;
     padding: 1%;
     padding-left: 6%;
     text-decoration: underline;
@@ -196,7 +205,7 @@ a:hover {
 .socialmedia {
     width: 25%;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.5vw;
     padding: 4%;
     display: inline-block;
 }
@@ -213,19 +222,15 @@ label {
 
 form {
     margin: 0 auto;
-    width: 60%;
-    font-size: 20px;
-    box-sizing: border-box;
-    margin-bottom: 5%;
+    width: 50%;
 }
 
 input {
-    float: right;
-    width: 70%;
+    width: 20vw;
 }
 
 .submitbutton input {
-    width: 10%;
+    width: 5vw;
 }
 
 h3 {
@@ -236,7 +241,7 @@ h3 {
 
 .dropbtn {
     font-family: "LeagueGothic-Regular";
-    font-size: 40px;
+    font-size: 30px;
     background-color: Transparent;
     background-repeat: no-repeat;
     border: none;
@@ -304,25 +309,29 @@ h3 {
 .text {
     margin-left: 5%;
     width: 35%;
-    font-size: 25px;
-    float: left;
+    font-size: 1.3vw;
     text-align: justify;
-    padding: 1%;
+    padding: 2%;
     max-height: 60vh;
     overflow: auto;
+    margin-bottom: 10%;
 }
 
 .pic {
-    margin-left: 2%;
+    float: right;
+    margin-right: 2.5vw;
+    width: 40vw;
 }
 
 .caption {
-    font-size: 25px;
-    width: 40%;
+    font-size: 1.3vw;
     text-align: center;
-    margin: 0 auto;
     float: right;
-    margin-right: 12%;
+    width: 50%;
+    clear: right;
+    margin-right: 2.5vw;
+    font-style: italic;
+    padding: 1%;
 }
 
 footer {
@@ -337,15 +346,11 @@ footer {
     clear: right;
 }
 
-#bbpic {
-    margin-left: 10%;
-}
-
 #profilegreeting {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    font-size: 30px;
+    font-size: 2vw;
     padding: 2%;
 }
 
@@ -353,42 +358,72 @@ footer {
     display: none;
 }
 
+#bbpic {
+    margin: 0;
+    margin-right: 13vw;
+    width: 20vw;
+}
+
 @media screen and (max-width: 880px) {
     .navigate {
         display: none;
     }
+    .greeting {
+        display: none;
+    }
+    .mobilespacer {
+        display: inline;
+        margin: 0;
+    }
+    
+    header{
+        font-size: 40px;
+    }
     .mobilenav {
         display: inline;
+        width: 100%;
+        background-color: #FF4081;
+        position: fixed;
+        box-shadow: 1px 1px 10px #888888;
+        z-index: 99;
+    }
+    .mobilenav h1 {
+        font-size: 100%;
+        color: #000000;
     }
     nav {
         padding: 0;
         padding-top: 2%;
     }
-    .greeting {
-        font-size: 40px;
-    }
     #profilepic {
         float: none;
         margin: 0;
         padding: 0;
-        padding-top: 5%;
+        padding-top: 10%;
         text-align: center;
     }
     #profilepic img {
-        width: 50%;
+        width: 30vw;
     }
     #profilepic figcaption {
         margin: 0 auto;
-        font-size: 40px;
+        font-size: 6vw;
     }
     #introtext {
         width: 80%;
-        font-size: 22px;
+        font-size: 3vw;
         margin: 0 auto;
         margin-bottom: 25%;
+        text-align: center;
+        border: none;
+        border-top: 3px solid #000000;
+        padding: 0;
+        padding-top: 5%;
+        margin-top: -10%;
     }
-    .text {
-        font-size: 20px;
+    .whiteboxheader {
+        font-size: 5vw;
+        padding: 5%;
     }
     .socialmedia {
         display: block;
@@ -396,19 +431,71 @@ footer {
         padding: 5%;
     }
     .socialmedia img {
-        width: 100%;
+        width: 20vw;
+    }
+    .socialmedia h2 {
+        font-size: 4vw;
+        margin: 0 auto;
     }
     .whitebox {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        min-height: 60vh;
+        margin-top: 10%;
     }
-    
-    .text {
-        flex: 1;
-    }
-    
     .submitbutton input {
         width: 25%;
+    }
+    .profile a {
+        display: block;
+        margin: 0 auto;
+        font-size: 200%;
+        width: 100px;
+        margin-bottom: 2%;
+    }
+    .whiteboxcontentheader {
+        font-size: 120%;
+        text-align: center;
+        padding: 2%;
+    }
+    .pic {
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+        margin-left: 10%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .caption {
+        font-size: 2vw;
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+        font-style: italic;
+    }
+    .text {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 2vw;
+        border: 1px solid #000000;
+        padding: 2%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    footer {
+        margin: 0;
+        padding: 0;
+        padding: 2%;
+        font-size: 90%;
+        text-align: center;
+        background-color: #FF4081;
+        color: #000000;
+    }
+    #bbpic {
+        height: auto;
+        margin-left: 30vw;
+    }
+    form {
+        width: 80%;
     }
 }
