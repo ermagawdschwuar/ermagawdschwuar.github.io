@@ -440,11 +440,13 @@ footer {
         margin: 0 auto;
     }
     .whitebox {
+        margin: 0 auto;
         width: 95%;
+        padding: 0;
         display: flex;
         flex-direction: column;
         min-height: 80vh;
-        margin-top: 10%;
+        margin-top: 15%;
     }
     .submitbutton input {
         width: 25%;
@@ -495,6 +497,7 @@ footer {
     }
     #bbpic {
         width: 100%;
+        margin: 0 auto;
     }
     form {
         width: 80%;
