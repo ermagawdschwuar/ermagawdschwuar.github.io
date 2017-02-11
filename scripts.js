@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     // on scroll, 
     $(window).on('scroll', function () {
-
+        
         // we round here to reduce a little workload
         var stop = Math.round($(window).scrollTop());
 
