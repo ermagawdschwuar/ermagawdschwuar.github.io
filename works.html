@@ -7,46 +7,144 @@
     <title>Joshua Lee</title>
     <!--
 WCD CA2   
-Filename: profile.html 	   
+Filename: works.html 	   
 Author: P1625439
-Date: 27 Nov 2016
+Date: 7 February 2017
 -->
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="images/icon.ico" type="image/ico" sizes="16x16">
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+    <link href="js/fancybox3/dist/jquery.fancybox.css" rel="stylesheet">
+    <script src="js/fancybox3/dist/jquery.fancybox.js"></script>
 </head>
 
-<body>
-    <article class="container" id="home">
-        <section class="navigate">
-            <header>
-                <h1>JOSHUA LEE</h1>
-            </header>
-            <!-- navigation bar -->
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="pageid">HOME</a></li>
-                    <li class="dropdown">
-                        <button class="dropbtn"><a href="profile.html">PROFILE</a></button>
-                        <div class="dropdown-content">
-                            <a href="life.html">Life</a	>
-                            <a href="education.html">Education</a>
-                            <a href="cca.html">CCAs</a>
-                            <a href="hobby.html">Hobbies</a>
-                        </div>
-                        <li><a href="works.html">WORKS</a></li>
-                        <li><a href="blog.html">BLOG</a></li>
-                </ul>
-            </nav>
-            <!-- end of navigation bar -->
+<body class="drawer drawer--right">
+    <section class="navigate">
+        <header>
+            <h1>JOSHUA LEE</h1>
+        </header>
+        <!-- navigation bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html" class="pageid">HOME</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn"><a href="profile.html">PROFILE</a></button>
+                    <div class="dropdown-content">
+                        <a href="life.html">LIFE</a	>
+                            <a href="education.html">EDUCATION</a>
+                        <a href="cca.html">CCAs</a>
+                        <a href="hobby.html">HOBBIES</a>
+                    </div>
+                    <li><a href="works.html">WORKS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!-- start of mobile nav-->
+    <header role="banner" class="mobilenav">
+        <header>
+            <h1>JOSHUA LEE</h1>
+        </header>
+        <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+
+        <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+                <li>MENU</li>
+                <li><a class="drawer-brand" href="index.html">HOME</a></li>
+                <li class="drawer-dropdown">
+                    <a class="drawer-brand" data-target="#" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
+            PROFILE <span class="drawer-caret"></span>
+          </a>
+                    <ul class="drawer-dropdown-menu">
+                        <li><a class="drawer-brand" href="life.html">LIFE</a></li>
+                        <li><a class="drawer-brand" href="education.html">EDUCATION</a></li>
+                        <li><a class="drawer-brand" href="cca.html">CCAs</a></li>
+                        <li><a class="drawer-brand" href="hobby.html">HOBBIES</a></li>
+                    </ul>
+                </li>
+                <li><a class="drawer-brand" href="works.html">WORKS</a></li>
+                <li><a class="drawer-brand" href="blog.html">BLOG</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <!-- end of mobile nav-->
+
+    <!-- main -->
+    <main class="container">
+        <section class="greeting">
+            <h2>
+                works.
+            </h2>
         </section>
 
-        
+        <section class="mobilespacer">
+            <p>&nbsp;</p>
+        </section>
 
-    </article>
+        <section class="whitebox">
+            <h2 class="whiteboxheader">
+                PHOTOGRAPHY
+            </h2>
+
+            <p class="workstext">
+                I love taking photographs - especially when I'm travelling overseas. Just admiring and capturing the beautiful sceneries of an unfamiliar place makes me love the place more. My main camera is my Canon 650D. Here are some of the photographs I took.
+            </p>
+
+            <section class="photography">
+                <h3>Click on the images to view in fullscreen!</h3>
+                <a href="images/mounttitlis.jpg" data-fancybox data-caption="Mount Titlis, Switzerland">
+                    <img src="images/mounttitlis.jpg" alt="Mount Titlis, Switzerland" />
+                </a>
+
+                <a href="images/archofconstantine.jpg" data-fancybox data-caption="Arch of Constantine, Italy">
+                    <img src="images/archofconstantine.jpg" alt="Arch of Constantine, Italy" />
+                </a>
+
+                <a href="images/florencecathedralfront.jpg" data-fancybox data-caption="Florence Cathedral, Italy"><img src="images/florencecathedralfront.jpg" alt="Florence Cathedral"></a>
+
+                <a href="images/florencecathedralside.jpg" data-fancybox data-caption="Florence Cathedral, Italy"><img src="images/florencecathedralside.jpg" alt="Florence Cathedral"></a>
+
+                <a href="images/florence.jpg" data-fancybox data-caption="Florence, Italy"><img src="images/florence.jpg" alt="Florence"></a>
+
+                <a href="images/changi.jpg" data-fancybox data-caption="Changi Area, Singapore"><img src="images/changi.jpg" alt="Sea"></a>
+
+            </section>
+            </section>
+
+            <section class="whitebox">
+                <h2 class="whiteboxheader">
+                    MEDIA
+                </h2>
+
+                <p class="workstext">
+                    I also love doing anything media-related; liked I mentioned in my <a href="hobby.html">hobbies page</a>. From stuff like photoshopping images to make them funny, to making short films! Here are some examples!
+                </p>
+                
+                <section class="photoshops">
+                    <h3>Photoshop &amp; After Effects</h3>
+                </section>
+            </section>
+    </main>
     <footer>
         <p>&copy; copyright 2016 | joshua lee.</p>
     </footer>
-
+    </article>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+    <script src="js/drawer/drawer.min.js" charset="utf-8"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>

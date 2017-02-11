@@ -120,9 +120,20 @@ a:hover {
 .navigate {
     width: 100%;
     background-color: #3E50B4;
-    position: fixed;
     box-shadow: 1px 1px 10px #888888;
+    position: fixed;
     z-index: 99;
+    transition-duration: 1s;
+}
+
+#homenavigate {
+    background-color: transparent;
+    box-shadow: 0px 0px 0px #888888;
+}
+
+#homenavigate.past-main {
+    background-color: #3E50B4;
+    box-shadow: 1px 1px 10px #888888;
 }
 
 .greeting {
@@ -131,6 +142,14 @@ a:hover {
     font-family: "Gotham-Light";
     padding-top: 15%;
     height: 30vw;
+    color: white;
+}
+
+#home {
+    background-image: url(images/homebanner.png);
+    background-size: cover;
+    height: 80vh;
+    background-attachment: fixed;
 }
 
 .mobilespacer {
@@ -364,6 +383,34 @@ footer {
     width: 20vw;
 }
 
+.workstext {
+    font-size: 140%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+    text-align: justify;
+}
+
+.workstext a {
+    padding: 0;
+    color: #FF4081;
+    text-decoration: underline;
+}
+
+.photography {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 120%;
+}
+
+.photography img {
+    width: 35vw;
+}
+
+.photshops h3 {
+    font-size: 120%;
+}
+
 @media screen and (max-width: 880px) {
     .navigate {
         display: none;
@@ -375,8 +422,7 @@ footer {
         display: inline;
         margin: 0;
     }
-    
-    header{
+    header {
         font-size: 40px;
     }
     .mobilenav {
@@ -502,5 +548,14 @@ footer {
     form {
         width: 80%;
         margin-bottom: 5vh;
+    }
+    .photography {
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        margin-left: 6vw;
+    }
+    .photography img {
+        width: 90%;
     }
 }

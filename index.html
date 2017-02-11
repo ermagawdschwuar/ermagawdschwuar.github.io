@@ -24,7 +24,7 @@ Date: 7 February 2017
 </head>
 
 <body class="drawer drawer--right">
-    <section class="navigate">
+    <section class="navigate" id="homenavigate">
         <header>
             <h1>JOSHUA LEE</h1>
         </header>
@@ -50,7 +50,7 @@ Date: 7 February 2017
         <header>
             <h1>JOSHUA LEE</h1>
         </header>
-        
+
         <button type="button" class="drawer-toggle drawer-hamburger">
       <span class="sr-only">toggle navigation</span>
       <span class="drawer-hamburger-icon"></span>
@@ -84,14 +84,14 @@ Date: 7 February 2017
             <br> i'm joshua lee.
         </h2>
     </section>
-    
+
     <section class="mobilespacer">
         <p>&nbsp;</p>
     </section>
 
     <section class="whitebox">
         <figure id="profilepic">
-            <img src="images/pp.png"     id="ppimg">
+            <img src="images/pp.png" id="ppimg">
             <figcaption>JOSHUA LEE</figcaption>
         </figure>
         <ul id="introtext">
@@ -152,6 +152,24 @@ Date: 7 February 2017
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
     <script src="js/drawer/drawer.min.js" charset="utf-8"></script>
     <script src="menu.js"></script>
+    <script>
+        // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
+        var mainbottom = $('#home').offset().top + $('#home').height();
+
+        // on scroll, 
+        $(window).on('scroll', function() {
+
+            // we round here to reduce a little workload
+            var stop = Math.round($(window).scrollTop());
+
+            if (stop > mainbottom) {
+                $('#homenavigate').addClass('past-main');
+            } else {
+                $('#homenavigate').removeClass('past-main');
+            }
+
+        });
+    </script>
 </body>
 
 </html>
