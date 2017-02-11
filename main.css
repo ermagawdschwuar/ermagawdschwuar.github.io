@@ -69,7 +69,6 @@ ul {
 /* end of importing font */
 
 html {
-    height: 100%;
     background-image: url(images/seamless_paper_texture.png);
 }
 
@@ -82,12 +81,9 @@ body {
 }
 
 header {
-    font-size: 30px;
     float: left;
     padding-top: 0.5%;
     padding-left: 5%;
-    font-family: "LeagueGothic-Regular";
-    color: #FFFFFF;
 }
 
 nav {
@@ -96,7 +92,7 @@ nav {
     text-align: right;
     font-size: 30px;
     padding-right: 5%;
-    padding-top: 1%;
+    padding-top: 1.2%;
     font-family: "LeagueGothic-Regular";
     color: #FFFFFF;
 }
@@ -126,12 +122,12 @@ a:hover {
     transition-duration: 1s;
 }
 
-#homenavigate {
+.navigate {
     background-color: transparent;
     box-shadow: 0px 0px 0px #888888;
 }
 
-#homenavigate.past-main {
+.navigate.past-main {
     background-color: #3E50B4;
     box-shadow: 1px 1px 10px #888888;
 }
@@ -140,15 +136,17 @@ a:hover {
     font-size: 4vw;
     text-align: center;
     font-family: "Gotham-Light";
-    padding-top: 15%;
-    height: 30vw;
+    padding-top: 20%;
     color: white;
+    background-size: cover;
+    height: 70vh;
+    background-attachment: fixed;
 }
 
 #home {
-    background-image: url(images/homebanner.png);
+    background-image: url(images/banners/homebanner.png);
     background-size: cover;
-    height: 80vh;
+    height: 70vh;
     background-attachment: fixed;
 }
 
@@ -164,6 +162,55 @@ a:hover {
     box-shadow: 2px 2px 10px #888888;
     margin-bottom: 5%;
     margin-top: 5%;
+}
+
+#profilegreeting {
+    background-image: url(images/banners/profilebanner.png);
+    background-size: cover;
+    height: 70vh;
+    background-attachment: fixed;
+}
+
+#lifegreeting {
+    background-image: url(images/banners/lifebanner.png);
+    background-size: cover;
+    height: 70vh;
+    background-attachment: fixed;
+}
+
+#edugreeting {
+    background-image: url(images/banners/edubanner.png);
+    background-size: cover;
+    height: 70vh;
+    background-attachment: fixed;
+}
+
+#ccagreeting {
+    background-image: url(images/banners/ccabanner.png);
+    background-size: cover;
+    height: 70vh;
+    background-attachment: fixed;
+}
+
+#hobbygreeting {
+    background-image: url(images/banners/hobbybanner.png);
+    background-size: cover;
+    height: 70vh;
+    background-attachment: fixed;
+}
+
+#worksgreeting {
+    background-image: url(images/banners/worksbanner.png);
+    background-size: cover;
+    height: 70vh;
+    background-attachment: fixed;
+}
+
+#bloggreeting {
+    background-image: url(images/banners/blogbanner.png);
+    background-size: cover;
+    height: 70vh;
+    background-attachment: fixed;
 }
 
 #profilepic {
@@ -365,7 +412,7 @@ footer {
     clear: right;
 }
 
-#profilegreeting {
+#profilecontentheader {
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -422,9 +469,6 @@ footer {
         display: inline;
         margin: 0;
     }
-    header {
-        font-size: 40px;
-    }
     .mobilenav {
         display: inline;
         width: 100%;
@@ -440,6 +484,10 @@ footer {
     nav {
         padding: 0;
         padding-top: 2%;
+    }
+    #mobilelogo {
+        height: 45px;
+        margin-top: 3%;
     }
     #profilepic {
         float: none;
