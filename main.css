@@ -234,7 +234,6 @@ a:hover {
     background-size: cover;
     height: 60vh;
     background-attachment: fixed;
-    
 }
 
 #profilepic {
@@ -539,7 +538,7 @@ footer {
 .worksgallery {
     width: 100%;
     margin: 0 auto;
-    font-size: 150%;
+    font-size: 120%;
 }
 
 #photography img {
@@ -574,6 +573,7 @@ footer {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 #return-to-top i {
     color: #fff;
     margin: 0;
@@ -587,12 +587,18 @@ footer {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
+
 #return-to-top:hover {
     background: rgba(0, 0, 0, 0.9);
 }
+
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+#mobilebloggreeting {
+    display: none;
 }
 
 @media screen and (max-width: 880px) {
@@ -613,6 +619,12 @@ footer {
         position: fixed;
         box-shadow: 1px 1px 10px #888888;
         z-index: 99;
+    }
+    .mobilenav a {
+        text-shadow: 0px 0px 0px #FFFFFF;
+    }
+    .mobilenav li {
+        text-shadow: 0px 0px 0px #FFFFFF;
     }
     .mobilenav h1 {
         font-size: 100%;
@@ -667,8 +679,9 @@ footer {
         width: 100%;
     }
     .socialmedia h2 {
-        font-size: 300%;
+        font-size: 140%;
         margin: 0 auto;
+        width: 100%;
     }
     .whitebox {
         margin: 0 auto;
@@ -690,7 +703,7 @@ footer {
         margin-bottom: 2%;
     }
     .whiteboxcontentheader {
-        font-size: 130%;
+        font-size: 210%;
         text-align: center;
         padding: 2%;
     }
@@ -734,30 +747,41 @@ footer {
         width: 80%;
         margin-bottom: 5vh;
     }
-    .photography {
-        margin: 0;
+    #photography {
+        margin: 0 auto;
         padding: 0;
-        width: 90%;
-        margin-left: 6vw;
-    }
-    .photography img {
-        width: 90%;
+        display: inline;
+        
     }
     
+    #photography img {
+        margin: 0 auto;
+        width: 70%;
+        margin-left: 13%;
+    }
     #form {
         display: none;
     }
-    
     #mobileform {
         margin: 0 auto;
         display: inline-block;
         padding: 2%;
         width: 100%;
-        text-align: center; 
+        text-align: center;
     }
-    
     #mobileformtext {
         font-size: 140%;
-        
+    }
+    
+    #bloggreeting {
+        display: inline;
+        color: transparent;
+    }
+    
+    #mobilebloggreeting {
+        display: block;
+        font-size: 200%; 
+        margin-top: 20%;
+        text-align: center;
     }
 }

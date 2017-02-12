@@ -84,12 +84,37 @@ Date: 27 Nov 2016
             <section class="greeting" id="bloggreeting">
                 <h2>
                     blog;
-                    <br>
-                    under construction.
+                    <br> under construction.
                 </h2>
+            </section>
+
+            <section id="mobilebloggreeting">
+                <h1>
+                    under construction!
+                </h1>
             </section>
         </article>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+    <script src="js/drawer/drawer.min.js" charset="utf-8"></script>
+    <script src="scripts.js"></script>
+    <script>
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 500) { // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200); // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200); // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function() { // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0 // Scroll to top of body
+            }, 500);
+        });
+    </script>
 </body>
 
 </html>
