@@ -22,6 +22,7 @@ Date: 7 February 2017
     <!-- drawer.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
     <script src=nav.js></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body class="drawer drawer--right">
@@ -79,6 +80,8 @@ Date: 7 February 2017
         </nav>
     </header>
     <!-- end of mobile nav-->
+    <!-- Return to Top -->
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
     <section class="greeting" id="home">
         <h2>
             hi;
@@ -119,30 +122,36 @@ Date: 7 February 2017
             <h2 class="socialword"><a href="https://www.snapchat.com/add/totallynotjoshi" target="_blank">Snapchat</a></h2>
         </section>
 
-        <form action="results.html">
-            <fieldset class="contactform">
-                <legend>Leave a message!</legend>
-                <label for="name">
+        <section id="form">
+            <form action="results.html">
+                <fieldset class="contactform">
+                    <legend>Let's get in touch.</legend>
+                    <label for="name">
                     Name
-                    <input type="text" id="name" name="nameinput" placeholder=" John Doe">
+                    <input type="text" id="name" name="nameinput" required>
                 </label>
-                <label for="email">
+                    <label for="emailinput">
                     Email
-                    <input type="email" id="email" name="emailinput" placeholder=" email@email.com">
+                    <input type="email" id="email" name="emailinput" required>
                 </label>
-                <label for="phone">
+                    <label for="phone">
                     Phone Number
-                    <input type="tel" id="phone" name="phoneinput" placeholder=" 98765321">
+                    <input type="tel" id="phone" name="phoneinput">
                 </label>
-                <label for="message">
-                    Your message:
-                    <input type="text" id="msg" name="msginput" placeholder=" insert your text here...">
+                    <label for="message">
+                    Your message
+                    <textarea name="message" id="msg" required></textarea>
                 </label>
-            </fieldset>
-            <fieldset class="submitbutton">
-                <input type="submit" id="submit" value="Submit">
-            </fieldset>
-        </form>
+                </fieldset>
+                <fieldset class="submitbutton">
+                    <input type="submit" id="submit" value="Submit">
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="mobileform">
+            <a href="form.html" id="mobileformtext">Send me a message!</a>
+        </section>
     </section>
     <footer>
         <p>&copy; copyright 2016 | joshua lee.</p>
@@ -153,6 +162,38 @@ Date: 7 February 2017
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
     <script src="js/drawer/drawer.min.js" charset="utf-8"></script>
     <script src="scripts.js"></script>
+    <script>
+        var textarea = document.querySelector('textarea');
+
+        textarea.addEventListener('keydown', autosize);
+
+        function autosize() {
+            var el = this;
+            setTimeout(function() {
+                el.style.cssText = 'height:auto; padding:0';
+                // for box-sizing other than "content-box" use:
+                // el.style.cssText = '-moz-box-sizing:content-box';
+                el.style.cssText = 'height:' + el.scrollHeight + 'px';
+            }, 0);
+        }
+
+    </script>
+    <script>
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 500) { // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200); // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200); // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function() { // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0 // Scroll to top of body
+            }, 500);
+        });
+
+    </script>
 </body>
 
 </html>

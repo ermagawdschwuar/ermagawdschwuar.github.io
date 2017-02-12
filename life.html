@@ -21,6 +21,7 @@ Date: 7 February 2017
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
     <!-- drawer.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body class="drawer drawer--right">
@@ -48,7 +49,7 @@ Date: 7 February 2017
     <!-- start of mobile nav-->
     <header role="banner" class="mobilenav">
         <header>
-                        <a href="index.html"><img src="images/weblogoblue.png" height="65px"></a>
+            <a href="index.html"><img src="images/weblogoblue.png" height="65px"></a>
         </header>
         <button type="button" class="drawer-toggle drawer-hamburger">
       <span class="sr-only">toggle navigation</span>
@@ -78,6 +79,7 @@ Date: 7 February 2017
     </header>
     <!-- end of mobile nav-->
     <main>
+        <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
         <section class="greeting" id="lifegreeting">
             <h2>
                 life.
@@ -93,7 +95,7 @@ Date: 7 February 2017
 
             <!-- section image -->
             <figure>
-                <img class="pic" src="images/church.png" alt="A picture of two of my church friends and I.">
+                <img class="pic" src="images/church.jpg" alt="A picture of two of my church friends and I.">
                 <!-- image caption -->
                 <figcaption class="caption">
                     My church friends and I.
@@ -132,6 +134,22 @@ Date: 7 February 2017
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
     <script src="js/drawer/drawer.min.js" charset="utf-8"></script>
     <script src="scripts.js"></script>
+    <script>
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 500) { // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200); // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200); // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function() { // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0 // Scroll to top of body
+            }, 500);
+        });
+
+    </script>
 </body>
 
 </html>

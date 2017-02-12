@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="EN">
+<!-- head -->
+
+<head>
+    <meta charset="utf-8">
+    <title>Joshua Lee</title>
+    <!--
+            WCD CA1 	   
+            Filename: works.html 	   
+            Author: P1625439
+            Date: 27 Nov 2016
+      -->
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="form.css">
+    <link rel="icon" href="pictures/icon.ico" type="image/ico" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <section id="form">
+        <form action="results.html">
+            <fieldset class="contactform">
+                <legend>Let's get in touch.</legend>
+                <label for="name">
+                    Name
+                    <input type="text" id="name" name="nameinput" required>
+                </label>
+                <label for="emailinput">
+                    Email
+                    <input type="email" id="email" name="emailinput" required>
+                </label>
+                <label for="phone">
+                    Phone Number
+                    <input type="tel" id="phone" name="phoneinput">
+                </label>
+                <label for="message">
+                    Your message
+                    <textarea name="message" id="msg" required></textarea>
+                </label>
+            </fieldset>
+            <fieldset class="submitbutton">
+                <input type="submit" id="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>

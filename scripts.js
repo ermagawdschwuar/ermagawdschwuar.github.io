@@ -1,10 +1,10 @@
 $(document).ready(function () {
     // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
-    var mainbottom = $('.navigate').offset().top + $('.navigate').height();
+    var mainbottom = $('.greeting').offset().top + $('.greeting').height();
 
     // on scroll, 
     $(window).on('scroll', function () {
-        
+
         // we round here to reduce a little workload
         var stop = Math.round($(window).scrollTop());
 
@@ -22,6 +22,7 @@ $(document).ready(function () {
 });
 
 $("[data-fancybox]").fancybox({
-    // Options will go here
-
+    image: {
+        protect: true
+    }
 });

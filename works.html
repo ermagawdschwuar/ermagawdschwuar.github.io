@@ -23,6 +23,7 @@ Date: 7 February 2017
     <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.1/js/drawer.min.js"></script>
     <link href="js/fancybox3/dist/jquery.fancybox.css" rel="stylesheet">
     <script src="js/fancybox3/dist/jquery.fancybox.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body class="drawer drawer--right">
@@ -50,7 +51,7 @@ Date: 7 February 2017
     <!-- start of mobile nav-->
     <header role="banner" class="mobilenav">
         <header>
-                        <a href="index.html"><img src="images/weblogoblue.png" height="65px"></a>
+            <a href="index.html"><img src="images/weblogoblue.png" height="65px"></a>
         </header>
         <button type="button" class="drawer-toggle drawer-hamburger">
       <span class="sr-only">toggle navigation</span>
@@ -82,6 +83,7 @@ Date: 7 February 2017
 
     <!-- main -->
     <main class="container">
+        <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
         <section class="greeting" id="worksgreeting">
             <h2>
                 works.
@@ -101,24 +103,19 @@ Date: 7 February 2017
                 I love taking photographs - especially when I'm travelling overseas. Just admiring and capturing the beautiful sceneries of an unfamiliar place makes me love the place more. My main camera is my Canon 650D. Here are some of the photographs I took.
             </p>
 
-            <section class="photography">
+            <section class="worksgallery" id="photography">
                 <h3>Click on the images to view in fullscreen!</h3>
-                <a href="images/mounttitlis.jpg" data-fancybox data-caption="Mount Titlis, Switzerland">
+                <a href="https://farm3.staticflickr.com/2068/32027780923_89fc2f735f_o_d.jpg" data-fancybox="images" data-caption="Mount Titlis, Switzerland" alt="The scenic view of Mount Titlis, Switzerland" data-width="5184" data-height="3456">
                     <img src="images/mounttitlis.jpg" alt="Mount Titlis, Switzerland" />
                 </a>
 
-                <a href="images/archofconstantine.jpg" data-fancybox data-caption="Arch of Constantine, Italy">
+                <a href="https://farm1.staticflickr.com/769/32688953042_0afc84c38a_o_d.jpg" data-fancybox="images" data-caption="Arch of Constantine, Italy" alt="The Arch of Constantine; Rome, Italy" data-width="3456" data-height="2304">
                     <img src="images/archofconstantine.jpg" alt="Arch of Constantine, Italy" />
                 </a>
 
-                <a href="images/florencecathedralfront.jpg" data-fancybox data-caption="Florence Cathedral, Italy"><img src="images/florencecathedralfront.jpg" alt="Florence Cathedral"></a>
+                <a href="https://farm4.staticflickr.com/3898/32718849671_9256c4981b_o_d.jpg" data-fancybox="images" data-caption="Florence Cathedral, Italy" alt="A shot of the FLorence Cathedral, Italy" data-width="5184" data-height="3456"><img src="images/florencecathedralside.jpg" alt="Florence Cathedral"></a>
 
-                <a href="images/florencecathedralside.jpg" data-fancybox data-caption="Florence Cathedral, Italy"><img src="images/florencecathedralside.jpg" alt="Florence Cathedral"></a>
-
-                <a href="images/florence.jpg" data-fancybox data-caption="Florence, Italy"><img src="images/florence.jpg" alt="Florence"></a>
-
-                <a href="images/changi.jpg" data-fancybox data-caption="Changi Area, Singapore"><img src="images/changi.jpg" alt="Sea"></a>
-
+                <a href="https://farm1.staticflickr.com/448/32461432010_d79da0fc4b_o_d.jpg" data-fancybox="images" data-caption="Florence, Italy" alt="A scenic shot of Florence" data-width="5184" data-height="3456"><img src="images/florence.jpg" alt="Florence"></a>
             </section>
         </section>
 
@@ -128,11 +125,17 @@ Date: 7 February 2017
             </h2>
 
             <p class="workstext">
-                I also love doing anything media-related; liked I mentioned in my <a href="hobby.html">hobbies page</a>. From stuff like photoshopping images to make them funny, to making short films! Here are some examples!
+                I also love doing anything media-related; liked I mentioned in my <a href="hobby.html">hobbies page</a>. From stuff like photoshopping images for the laughs, to making short films! Here are some examples!
             </p>
 
-            <section class="photoshops">
+            <section class="worksgallery" id="photoshop">
                 <h3>Photoshop &amp; After Effects</h3>
+                <a href="images/agmposter.jpg" data-fancybox="images" data-caption="This was the poster I did for DMIT Club to publicize our annual general meeting!" alt="A poster I did for DMIT Club to publicize our annual general meeting">
+                    <img src="images/agmposter.jpg" alt="A poster I did for DMIT Club to publicize our annual general meeting" />
+                </a>
+                <a href="images/cip.gif" data-fancybox="images" data-caption="This was an animated poster I did for DMIT Club to promote our Community Involvement Project event!" alt="An animated poster I did for DMIT Club to promote our Community Involvement Project event">
+                    <img src="images/cip.jpg" alt="An animated poster I did for DMIT Club to promote our Community Involvement Project event" />
+                </a>
             </section>
         </section>
     </main>
@@ -145,6 +148,21 @@ Date: 7 February 2017
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
     <script src="js/drawer/drawer.min.js" charset="utf-8"></script>
     <script src="scripts.js"></script>
+    <script>
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 500) { // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200); // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200); // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function() { // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0 // Scroll to top of body
+            }, 500);
+        });
+    </script>
 </body>
 
 </html>

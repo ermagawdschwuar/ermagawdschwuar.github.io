@@ -70,6 +70,7 @@ ul {
 
 html {
     background-image: url(images/seamless_paper_texture.png);
+    font-size: 18px;
 }
 
 body {
@@ -95,11 +96,16 @@ nav {
     padding-top: 1.2%;
     font-family: "LeagueGothic-Regular";
     color: #FFFFFF;
+    text-shadow: 1px 1px 10px #000000;
 }
 
 nav li {
     list-style: none;
     display: inline;
+}
+
+nav a {
+    text-shadow: 1px 1px 10px #000000;
 }
 
 a {
@@ -115,16 +121,33 @@ a:hover {
 
 .navigate {
     width: 100%;
-    background-color: #3E50B4;
-    box-shadow: 1px 1px 10px #888888;
+    background-color: transparent;
+    box-shadow: 0px 0px 0px #888888;
     position: fixed;
     z-index: 99;
     transition-duration: 1s;
 }
 
-.navigate {
-    background-color: transparent;
-    box-shadow: 0px 0px 0px #888888;
+#resultsgreeting {
+    display: none;
+}
+
+#resultsnav {
+    background-color: #3E50B4;
+}
+
+#resultsspacer {
+    display: inline;
+}
+
+#resultswhitebox {
+    display: block;
+    width: 50%;
+}
+
+#formheader {
+    text-align: center;
+    font-size: 140%;
 }
 
 .navigate.past-main {
@@ -139,12 +162,12 @@ a:hover {
     padding-top: 20%;
     color: white;
     background-size: cover;
-    height: 70vh;
+    height: 100vh;
     background-attachment: fixed;
 }
 
 #home {
-    background-image: url(images/banners/homebanner.png);
+    background-image: url(images/banners/homebanner.jpg);
     background-size: cover;
     height: 70vh;
     background-attachment: fixed;
@@ -165,49 +188,49 @@ a:hover {
 }
 
 #profilegreeting {
-    background-image: url(images/banners/profilebanner.png);
+    background-image: url(images/banners/profilebanner.jpg);
     background-size: cover;
     height: 70vh;
     background-attachment: fixed;
 }
 
 #lifegreeting {
-    background-image: url(images/banners/lifebanner.png);
+    background-image: url(images/banners/lifebanner.jpg);
     background-size: cover;
     height: 70vh;
     background-attachment: fixed;
 }
 
 #edugreeting {
-    background-image: url(images/banners/edubanner.png);
+    background-image: url(images/banners/edubanner.jpg);
     background-size: cover;
     height: 70vh;
     background-attachment: fixed;
 }
 
 #ccagreeting {
-    background-image: url(images/banners/ccabanner.png);
+    background-image: url(images/banners/ccabanner.jpg);
     background-size: cover;
     height: 70vh;
     background-attachment: fixed;
 }
 
 #hobbygreeting {
-    background-image: url(images/banners/hobbybanner.png);
+    background-image: url(images/banners/hobbybanner.jpg);
     background-size: cover;
     height: 70vh;
     background-attachment: fixed;
 }
 
 #worksgreeting {
-    background-image: url(images/banners/worksbanner.png);
+    background-image: url(images/banners/worksbanner.jpg);
     background-size: cover;
     height: 70vh;
     background-attachment: fixed;
 }
 
 #bloggreeting {
-    background-image: url(images/banners/blogbanner.png);
+    background-image: url(images/banners/blogbanner.jpg);
     background-size: cover;
     height: 70vh;
     background-attachment: fixed;
@@ -261,17 +284,19 @@ a:hover {
 }
 
 .whiteboxcontentheader {
+    font-family: "LeagueGothic-Regular";
+    color: #000000;
     text-align: left;
-    font-size: 2.5vw;
+    font-size: 250%;
+    margin-left: 1%;
     padding: 1%;
     padding-left: 6%;
-    text-decoration: underline;
 }
 
 .socialmedia {
     width: 25%;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 100%;
     padding: 4%;
     display: inline-block;
 }
@@ -284,19 +309,6 @@ label {
     display: block;
     width: 100%;
     margin: 0.2em;
-}
-
-form {
-    margin: 0 auto;
-    width: 50%;
-}
-
-input {
-    width: 20vw;
-}
-
-.submitbutton input {
-    width: 5vw;
 }
 
 h3 {
@@ -342,6 +354,7 @@ h3 {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-shadow: 0px 0px 0px #FFFFFF;
 }
 
 .dropdown-content a:hover {
@@ -351,6 +364,84 @@ h3 {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    background-image: url(images/crossword.png);
+    width: 500px;
+}
+
+legend {
+    padding: 0;
+    margin: 0;
+    font-size: 140%;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 5%;
+    padding-top: 10%;
+}
+
+input {
+    padding: 0;
+    margin: 0;
+    margin: 0 auto;
+    font-size: 100%;
+    padding: 2% 3% 2% 3%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #757575;
+    width: 300px;
+    background-image: url(images/crossword.png);
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    padding: 0;
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+}
+
+textarea {
+    font-family: inherit;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    background: none;
+    min-width: 310px;
+    max-width: 310px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 2% 1% 2% 1%;
+    min-height: 20px;
+    display: inline-block;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#submit {
+    width: 20%;
+    cursor: pointer;
+}
+
+#submit:hover {
+    color: #3E50B4;
+    border-bottom-color: #3E50B4;
+}
+
+#mobileform {
+    display: none;
 }
 
 .profile {
@@ -444,18 +535,63 @@ footer {
     text-decoration: underline;
 }
 
-.photography {
+.worksgallery {
     width: 100%;
     margin: 0 auto;
-    font-size: 120%;
+    font-size: 150%;
 }
 
-.photography img {
+#photography img {
     width: 35vw;
 }
 
-.photshops h3 {
-    font-size: 120%;
+#photoshop {
+    text-align: center;
+}
+
+#photoshop img {
+    padding-bottom: 5%;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
 }
 
 @media screen and (max-width: 880px) {
@@ -605,5 +741,22 @@ footer {
     }
     .photography img {
         width: 90%;
+    }
+    
+    #form {
+        display: none;
+    }
+    
+    #mobileform {
+        margin: 0 auto;
+        display: inline-block;
+        padding: 2%;
+        width: 100%;
+        text-align: center; 
+    }
+    
+    #mobileformtext {
+        font-size: 140%;
+        
     }
 }
