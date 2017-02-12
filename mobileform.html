@@ -4,10 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Joshua Lee</title>
+    <title>Joshua Lee's Form</title>
     <!--
 WCD CA2 	   
-Filename: index.html 	   
+Filename: mobileform.html 	   
 Author: P1625439
 Date: 7 February 2017
 -->
@@ -63,10 +63,6 @@ Date: 7 February 2017
             <a href="index.html"><img src="images/weblogoblue.png" height="50px"></a>
         </header>
         <!-- hamburger menu -->
-        <button type="button" class="drawer-toggle drawer-hamburger">
-            <span class="sr-only">toggle navigation</span>
-            <span class="drawer-hamburger-icon"></span>
-        </button>
         <!-- drawer -->
         <nav class="drawer-nav" role="navigation">
             <ul class="drawer-menu">
@@ -91,87 +87,33 @@ Date: 7 February 2017
     <main class="container">
         <!-- back to top-->
         <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
-
-        <!-- greeting -->
-        <section class="greeting" id="homegreeting">
-            <h2>
-                hi;<br> i'm joshua lee.
-            </h2>
-        </section>
-        <!-- mobile spacer -->
-        <section class="mobilespacer">
-            <p>&nbsp;</p>
-        </section>
-
-        <!-- introduction -->
-        <article class="whitebox">
-            <!-- profile picture-->
-            <figure id="profilepic">
-                <img src="images/pp.png" id="ppimg">
-                <figcaption>JOSHUA LEE</figcaption>
-            </figure>
-            <!-- introduction text -->
-            <ul id="introtext">
-                <li>Turning 18 as of 22 March this year.</li>
-                <li>Freshman at Singapore Polytechnic; Infocomm Security Management.</li>
-                <li>Publications subcommittee member of DMIT Club.</li>
-                <li>Primer (Cadet Lieutenant) for the Boys' Brigade.</li>
-                <li>Practitioner 1 of Krav Maga</li>
-            </ul>
-        </article>
-
-        <!-- social media -->
-        <article class="whitebox" id="contact">
-            <!-- social media header -->
-            <h2 class="whiteboxheader">Contact Me!</h2>
-            <!-- instagram -->
-            <section class="socialmedia">
-                <a href="https://instagram.com/ermagawdschwuar" target="_blank"><img src="images/insta.png" alt="Instagram logo"></a>
-                <h2><a href="https://instagram.com/ermagawdschwuar" target="_blank">Instagram</a></h2>
-            </section>
-            <!-- facebook -->
-            <section class="socialmedia">
-                <a href="https://facebook.com/omgjoshie" target="_blank"><img src="images/facebook.png" alt="Facebook logo"></a>
-                <h2 class="socialword"><a href="https://facebook.com/omgjoshie" target="_blank">Facebook</a></h2>
-            </section>
-            <!-- snapchat -->
-            <section class="socialmedia">
-                <a href="https://www.snapchat.com/add/totallynotjoshi" target="_blank"><img src="images/snap.png" alt="Snapchat logo"></a>
-                <h2 class="socialword"><a href="https://www.snapchat.com/add/totallynotjoshi" target="_blank">Snapchat</a></h2>
-            </section>
-
-            <!-- desktop contact form -->
-            <section id="form">
-                <form action="results.html">
-                    <fieldset class="contactform">
-                        <legend>Let's get in touch.</legend>
-                        <label for="name">
+        <!-- mobile form -->
+        <article id="mobileform">
+            <form action="results.html">
+                <fieldset class="contactform">
+                    <legend>Let's get in touch.</legend>
+                    <label for="name">
                     Name
                     <input type="text" id="name" name="nameinput" required>
                 </label>
-                        <label for="emailinput">
+                    <label for="emailinput">
                     Email
                     <input type="email" id="email" name="emailinput" required>
                 </label>
-                        <label for="phone">
+                    <label for="phone">
                     Phone Number
                     <input type="tel" id="phone" name="phoneinput">
                 </label>
-                        <label for="message">
+                    <label for="message">
                     Your message
                     <textarea name="message" id="msg" required></textarea>
                 </label>
-                    </fieldset>
-                    <fieldset class="submitbutton">
-                        <input type="submit" id="submit" value="Submit">
-                    </fieldset>
-                </form>
-            </section>
-
-            <!-- mobile contact form -->
-            <section id="mobileform">
-                <a href="form.html" id="mobileformtext">Send me a message!</a>
-            </section>
+                </fieldset>
+                <fieldset class="submitbutton">
+                    <input type="submit" id="submit" value="Submit">
+                </fieldset>
+                <h2><a href="index.html">Back to home.</a></h2>
+            </form>
         </article>
 
     </main>
@@ -190,38 +132,34 @@ Date: 7 February 2017
     <script src="scripts.js"></script>
     <!-- textarea expand -->
     <script>
-        $(document).ready(function() {
-            var textarea = document.querySelector('textarea');
+        var textarea = document.querySelector('textarea');
 
-            textarea.addEventListener('keydown', autosize);
+        textarea.addEventListener('keydown', autosize);
 
-            function autosize() {
-                var el = this;
-                setTimeout(function() {
-                    el.style.cssText = 'height:auto; padding:0';
-                    // for box-sizing other than "content-box" use:
-                    // el.style.cssText = '-moz-box-sizing:content-box';
-                    el.style.cssText = 'height:' + el.scrollHeight + 'px';
-                }, 0);
-            }
-        });
+        function autosize() {
+            var el = this;
+            setTimeout(function() {
+                el.style.cssText = 'height:auto; padding:0';
+                // for box-sizing other than "content-box" use:
+                // el.style.cssText = '-moz-box-sizing:content-box';
+                el.style.cssText = 'height:' + el.scrollHeight + 'px';
+            }, 0);
+        }
 
     </script>
     <!-- back to top-->
     <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                if ($(this).scrollTop() >= 500) {
-                    $('#return-to-top').fadeIn(200);
-                } else {
-                    $('#return-to-top').fadeOut(200);
-                }
-            });
-            $('#return-to-top').click(function() {
-                $('body,html').animate({
-                    scrollTop: 0
-                }, 500);
-            });
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 500) {
+                $('#return-to-top').fadeIn(200);
+            } else {
+                $('#return-to-top').fadeOut(200);
+            }
+        });
+        $('#return-to-top').click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 500);
         });
 
     </script>

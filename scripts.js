@@ -1,5 +1,5 @@
+/* navigation scroll  */
 $(document).ready(function () {
-    // get the value of the bottom of the #main element by adding the offset of that element plus its height, set it as a variable
     var mainbottom = $('.greeting').offset().top + $('.greeting').height();
 
     // on scroll, 
@@ -17,12 +17,29 @@ $(document).ready(function () {
     });
 });
 
+/* drawer */
 $(document).ready(function () {
     $('.drawer').drawer();
 });
 
+/* fancybox */
 $("[data-fancybox]").fancybox({
     image: {
         protect: true
     }
+});
+
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >= 500) {
+            $('#return-to-top').fadeIn(200);
+        } else {
+            $('#return-to-top').fadeOut(200);
+        }
+    });
+    $('#return-to-top').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+    });
 });
