@@ -232,8 +232,9 @@ a:hover {
 #bloggreeting {
     background-image: url(images/banners/blogbanner.jpg);
     background-size: cover;
-    height: 70vh;
+    height: 60vh;
     background-attachment: fixed;
+    
 }
 
 #profilepic {
